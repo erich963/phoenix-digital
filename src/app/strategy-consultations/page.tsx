@@ -62,17 +62,17 @@ export default function StrategyConsultationsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-white pt-20 pb-24 lg:pt-28 lg:pb-32 border-b border-slate-200">
+      <section className="bg-[#000914] py-32 lg:py-40">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="max-w-3xl">
-            <SectionLabel>Strategy Consultations</SectionLabel>
-            <h1 className="text-4xl sm:text-5xl font-semibold text-slate-900 leading-tight tracking-tight mb-6">
+            <SectionLabel className="text-white/60">Strategy Consultations</SectionLabel>
+            <h1 className="text-4xl sm:text-5xl font-semibold text-white leading-tight tracking-tight mb-6">
               Senior-level strategy sessions for growth, tracking, GTM, CRM, and AI-enabled operations.
             </h1>
-            <p className="text-lg text-slate-600 leading-relaxed mb-10 max-w-2xl">
+            <p className="text-lg text-[#FBFBFB]/80 leading-relaxed mb-10 max-w-2xl">
               Strategy consultations are designed for businesses that need experienced guidance, sharper decision-making, or targeted troubleshooting — without committing to broad implementation work.
             </p>
-            <Button href="/contact" size="lg">
+            <Button href="/contact" size="lg" variant="outline">
               Book a Consultation
             </Button>
           </div>
@@ -80,7 +80,7 @@ export default function StrategyConsultationsPage() {
       </section>
 
       {/* Scope note */}
-      <section className="bg-copper-50 border-b border-copper-200 py-12 lg:py-14">
+      <section className="bg-gray-50 border-b border-gray-200 py-12 lg:py-14">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="max-w-2xl">
             <p className="text-slate-800 font-medium leading-relaxed">
@@ -91,11 +91,11 @@ export default function StrategyConsultationsPage() {
       </section>
 
       {/* Six Categories */}
-      <section className="bg-white py-20 lg:py-28 border-b border-slate-200">
+      <section className="bg-white py-20 lg:py-28 border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="mb-14">
             <SectionLabel>Areas of Focus</SectionLabel>
-            <h2 className="text-3xl font-semibold text-slate-900 tracking-tight">
+            <h2 className="text-3xl font-semibold text-[#000914] tracking-tight">
               Six categories of senior-level advisory
             </h2>
           </div>
@@ -103,10 +103,10 @@ export default function StrategyConsultationsPage() {
             {strategyCategories.map((category) => (
               <div
                 key={category.title}
-                className="bg-slate-50 border border-slate-200 rounded-2xl p-7"
+                className="bg-white border border-gray-200 rounded-lg p-7 shadow-[6px_6px_9px_rgba(0,0,0,0.2)]"
               >
-                <div className="w-8 h-1 bg-copper rounded-full mb-5" />
-                <h3 className="text-base font-semibold text-slate-900 mb-2">
+                <div className="w-8 h-1 bg-[#000914] mb-5" />
+                <h3 className="text-base font-semibold text-[#000914] mb-2">
                   {category.title}
                 </h3>
                 <p className="text-sm text-slate-600 leading-relaxed">
@@ -119,12 +119,12 @@ export default function StrategyConsultationsPage() {
       </section>
 
       {/* Who This Is For */}
-      <section className="bg-slate-50 border-b border-slate-200 py-20 lg:py-28">
+      <section className="bg-gray-50 border-b border-gray-200 py-20 lg:py-28">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
               <SectionLabel>Who This Is For</SectionLabel>
-              <h2 className="text-3xl font-semibold text-slate-900 tracking-tight mb-6">
+              <h2 className="text-3xl font-semibold text-[#000914] tracking-tight mb-6">
                 Built for operators who need answers, not ambiguity
               </h2>
               <p className="text-slate-600 leading-relaxed">
@@ -135,9 +135,9 @@ export default function StrategyConsultationsPage() {
               {whoThisIsFor.map((item) => (
                 <div
                   key={item}
-                  className="flex items-start gap-3 bg-white border border-slate-200 rounded-xl p-5"
+                  className="flex items-start gap-3 bg-white border border-gray-200 rounded-lg p-5"
                 >
-                  <CheckCircleIcon className="w-5 h-5 text-copper flex-shrink-0 mt-0.5" />
+                  <CheckCircleIcon className="w-5 h-5 text-[#000914] flex-shrink-0 mt-0.5" />
                   <span className="text-slate-700 text-sm leading-relaxed">{item}</span>
                 </div>
               ))}
@@ -147,11 +147,11 @@ export default function StrategyConsultationsPage() {
       </section>
 
       {/* Session Formats */}
-      <section className="bg-white py-20 lg:py-28 border-b border-slate-200">
+      <section className="bg-white py-20 lg:py-28 border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="mb-14">
             <SectionLabel>Session Formats</SectionLabel>
-            <h2 className="text-3xl font-semibold text-slate-900 tracking-tight">
+            <h2 className="text-3xl font-semibold text-[#000914] tracking-tight">
               Choose the format that fits your need
             </h2>
           </div>
@@ -159,10 +159,10 @@ export default function StrategyConsultationsPage() {
             {sessionFormats.map((format) => (
               <div
                 key={format.title}
-                className="bg-slate-50 border border-slate-200 rounded-2xl p-8"
+                className="bg-white border border-gray-200 rounded-lg p-8 shadow-[6px_6px_9px_rgba(0,0,0,0.2)]"
               >
-                <div className="w-8 h-1 bg-copper rounded-full mb-5" />
-                <h3 className="text-lg font-semibold text-slate-900 mb-3">
+                <div className="w-8 h-1 bg-[#000914] mb-5" />
+                <h3 className="text-lg font-semibold text-[#000914] mb-3">
                   {format.title}
                 </h3>
                 <p className="text-sm text-slate-600 leading-relaxed">
@@ -175,11 +175,11 @@ export default function StrategyConsultationsPage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-slate-50 border-b border-slate-200 py-20 lg:py-28">
+      <section className="bg-gray-50 border-b border-gray-200 py-20 lg:py-28">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="mb-14">
             <SectionLabel>FAQ</SectionLabel>
-            <h2 className="text-3xl font-semibold text-slate-900 tracking-tight">
+            <h2 className="text-3xl font-semibold text-[#000914] tracking-tight">
               Common questions
             </h2>
           </div>
@@ -187,13 +187,13 @@ export default function StrategyConsultationsPage() {
             {strategyFAQs.map((faq) => (
               <details
                 key={faq.question}
-                className="group bg-white border border-slate-200 rounded-xl overflow-hidden"
+                className="group bg-white border border-gray-200 rounded-lg overflow-hidden"
               >
                 <summary className="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none">
-                  <span className="text-base font-semibold text-slate-900">{faq.question}</span>
+                  <span className="text-base font-semibold text-[#000914]">{faq.question}</span>
                   <ChevronDownIcon className="w-5 h-5 text-slate-400 flex-shrink-0 group-open:rotate-180 transition-transform" />
                 </summary>
-                <div className="px-6 pb-5 border-t border-slate-100">
+                <div className="px-6 pb-5 border-t border-gray-100">
                   <p className="text-sm text-slate-600 leading-relaxed pt-4">{faq.answer}</p>
                 </div>
               </details>
@@ -203,15 +203,15 @@ export default function StrategyConsultationsPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-slate-900 py-20 lg:py-28">
+      <section className="bg-[#000914] py-20 lg:py-28">
         <div className="max-w-6xl mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-semibold text-white tracking-tight mb-5 max-w-2xl mx-auto">
             Have a specific problem to work through?
           </h2>
-          <p className="text-slate-400 leading-relaxed mb-10 max-w-xl mx-auto">
+          <p className="text-[#FBFBFB]/70 leading-relaxed mb-10 max-w-xl mx-auto">
             Book a strategy session and bring your question. We&apos;ll give you a clear perspective, a practical framework, and a concrete next step.
           </p>
-          <Button href="/contact" size="lg">
+          <Button href="/contact" size="lg" variant="outline">
             Book a Consultation
           </Button>
         </div>

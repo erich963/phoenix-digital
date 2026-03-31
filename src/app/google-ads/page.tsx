@@ -53,17 +53,17 @@ export default function GoogleAdsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-white pt-20 pb-24 lg:pt-28 lg:pb-32 border-b border-slate-200">
+      <section className="bg-[#000914] py-32 lg:py-40">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="max-w-3xl">
-            <SectionLabel>Google Ads Management</SectionLabel>
-            <h1 className="text-4xl sm:text-5xl font-semibold text-slate-900 leading-tight tracking-tight mb-6">
+            <SectionLabel className="text-white/60">Google Ads Management</SectionLabel>
+            <h1 className="text-4xl sm:text-5xl font-semibold text-white leading-tight tracking-tight mb-6">
               Turn Google Ads into a predictable source of qualified B2B leads.
             </h1>
-            <p className="text-lg text-slate-600 leading-relaxed mb-10 max-w-2xl">
+            <p className="text-lg text-[#FBFBFB]/80 leading-relaxed mb-10 max-w-2xl">
               Disciplined paid search management built around lead quality, economics, and pipeline value — not vanity metrics.
             </p>
-            <Button href="/contact" size="lg">
+            <Button href="/contact" size="lg" variant="outline">
               Book a Consultation
             </Button>
           </div>
@@ -71,12 +71,12 @@ export default function GoogleAdsPage() {
       </section>
 
       {/* Who This Is For */}
-      <section className="bg-slate-50 border-b border-slate-200 py-20 lg:py-28">
+      <section className="bg-gray-50 border-b border-gray-200 py-20 lg:py-28">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
               <SectionLabel>Who This Is For</SectionLabel>
-              <h2 className="text-3xl font-semibold text-slate-900 tracking-tight mb-6">
+              <h2 className="text-3xl font-semibold text-[#000914] tracking-tight mb-6">
                 Built for B2B businesses with real lead value
               </h2>
               <p className="text-slate-600 leading-relaxed">
@@ -91,9 +91,9 @@ export default function GoogleAdsPage() {
               ].map((item) => (
                 <div
                   key={item}
-                  className="flex items-start gap-3 bg-white border border-slate-200 rounded-xl p-5"
+                  className="flex items-start gap-3 bg-white border border-gray-200 rounded-lg p-5"
                 >
-                  <CheckCircleIcon className="w-5 h-5 text-copper flex-shrink-0 mt-0.5" />
+                  <CheckCircleIcon className="w-5 h-5 text-[#000914] flex-shrink-0 mt-0.5" />
                   <span className="text-slate-700 text-sm leading-relaxed">{item}</span>
                 </div>
               ))}
@@ -103,11 +103,11 @@ export default function GoogleAdsPage() {
       </section>
 
       {/* Common Problems */}
-      <section className="bg-white py-20 lg:py-28 border-b border-slate-200">
+      <section className="bg-white py-20 lg:py-28 border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="mb-14">
             <SectionLabel>Common Problems We Solve</SectionLabel>
-            <h2 className="text-3xl font-semibold text-slate-900 tracking-tight max-w-lg">
+            <h2 className="text-3xl font-semibold text-[#000914] tracking-tight max-w-lg">
               Why most B2B Google Ads accounts underperform
             </h2>
           </div>
@@ -115,11 +115,11 @@ export default function GoogleAdsPage() {
             {commonProblems.map((problem) => (
               <div
                 key={problem.label}
-                className="bg-slate-50 border border-slate-200 rounded-xl p-6"
+                className="bg-gray-50 border border-gray-200 rounded-lg p-6"
               >
                 <div className="flex items-start gap-3 mb-2">
                   <XCircleIcon className="w-5 h-5 text-slate-400 flex-shrink-0 mt-0.5" />
-                  <h3 className="text-base font-semibold text-slate-900">{problem.label}</h3>
+                  <h3 className="text-base font-semibold text-[#000914]">{problem.label}</h3>
                 </div>
                 <p className="text-sm text-slate-600 leading-relaxed pl-8">{problem.description}</p>
               </div>
@@ -129,12 +129,12 @@ export default function GoogleAdsPage() {
       </section>
 
       {/* What's Included */}
-      <section className="bg-slate-50 border-b border-slate-200 py-20 lg:py-28">
+      <section className="bg-gray-50 border-b border-gray-200 py-20 lg:py-28">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
               <SectionLabel>What&apos;s Included</SectionLabel>
-              <h2 className="text-3xl font-semibold text-slate-900 tracking-tight mb-6">
+              <h2 className="text-3xl font-semibold text-[#000914] tracking-tight mb-6">
                 Full-service management, clearly scoped
               </h2>
               <p className="text-slate-600 leading-relaxed">
@@ -143,8 +143,8 @@ export default function GoogleAdsPage() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {included.map((item) => (
-                <div key={item} className="flex items-start gap-2.5 bg-white border border-slate-200 rounded-lg px-4 py-3">
-                  <CheckCircleIcon className="w-4 h-4 text-copper flex-shrink-0 mt-0.5" />
+                <div key={item} className="flex items-start gap-2.5 bg-white border border-gray-200 rounded-lg px-4 py-3">
+                  <CheckCircleIcon className="w-4 h-4 text-[#000914] flex-shrink-0 mt-0.5" />
                   <span className="text-sm text-slate-700">{item}</span>
                 </div>
               ))}
@@ -154,11 +154,11 @@ export default function GoogleAdsPage() {
       </section>
 
       {/* The Approach */}
-      <section className="bg-white py-20 lg:py-28 border-b border-slate-200">
+      <section className="bg-white py-20 lg:py-28 border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="max-w-2xl mx-auto text-center">
             <SectionLabel>The Phoenix Digital Approach</SectionLabel>
-            <h2 className="text-3xl font-semibold text-slate-900 tracking-tight mb-8">
+            <h2 className="text-3xl font-semibold text-[#000914] tracking-tight mb-8">
               Designed around pipeline, not clicks
             </h2>
           </div>
@@ -169,9 +169,9 @@ export default function GoogleAdsPage() {
               { title: 'Copy Built to Qualify', desc: 'Ads that attract the right leads and screen out the wrong ones before the click.' },
               { title: 'Reporting Tied to Pipeline', desc: 'Performance tracked against what matters: leads, lead quality, and pipeline value.' },
             ].map((item) => (
-              <div key={item.title} className="bg-slate-50 border border-slate-200 rounded-xl p-6">
-                <div className="w-6 h-1 bg-copper rounded-full mb-4" />
-                <h3 className="text-base font-semibold text-slate-900 mb-2">{item.title}</h3>
+              <div key={item.title} className="bg-gray-50 border border-gray-200 rounded-lg p-6 shadow-[6px_6px_9px_rgba(0,0,0,0.2)]">
+                <div className="w-6 h-1 bg-[#000914] mb-4" />
+                <h3 className="text-base font-semibold text-[#000914] mb-2">{item.title}</h3>
                 <p className="text-sm text-slate-600 leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -180,11 +180,11 @@ export default function GoogleAdsPage() {
       </section>
 
       {/* Landing Pages callout */}
-      <section className="bg-copper-50 border-y border-copper-200 py-14 lg:py-16">
+      <section className="bg-gray-50 border-y border-gray-200 py-14 lg:py-16">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div className="max-w-xl">
-              <h2 className="text-2xl font-semibold text-slate-900 mb-3">
+              <h2 className="text-2xl font-semibold text-[#000914] mb-3">
                 Why landing pages matter
               </h2>
               <p className="text-slate-700 leading-relaxed text-sm">
@@ -199,11 +199,11 @@ export default function GoogleAdsPage() {
       </section>
 
       {/* Engagement Options */}
-      <section className="bg-white py-20 lg:py-28 border-b border-slate-200">
+      <section className="bg-white py-20 lg:py-28 border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="mb-14">
             <SectionLabel>Engagement Options</SectionLabel>
-            <h2 className="text-3xl font-semibold text-slate-900 tracking-tight">
+            <h2 className="text-3xl font-semibold text-[#000914] tracking-tight">
               How we can work together
             </h2>
           </div>
@@ -211,10 +211,10 @@ export default function GoogleAdsPage() {
             {engagementOptions.map((option) => (
               <div
                 key={option.title}
-                className="bg-slate-50 border border-slate-200 rounded-2xl p-8"
+                className="bg-white border border-gray-200 rounded-lg p-8 shadow-[6px_6px_9px_rgba(0,0,0,0.2)]"
               >
-                <div className="w-8 h-1 bg-copper rounded-full mb-5" />
-                <h3 className="text-lg font-semibold text-slate-900 mb-3">{option.title}</h3>
+                <div className="w-8 h-1 bg-[#000914] mb-5" />
+                <h3 className="text-lg font-semibold text-[#000914] mb-3">{option.title}</h3>
                 <p className="text-sm text-slate-600 leading-relaxed">{option.description}</p>
               </div>
             ))}
@@ -223,11 +223,11 @@ export default function GoogleAdsPage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-slate-50 border-b border-slate-200 py-20 lg:py-28">
+      <section className="bg-gray-50 border-b border-gray-200 py-20 lg:py-28">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="mb-14">
             <SectionLabel>FAQ</SectionLabel>
-            <h2 className="text-3xl font-semibold text-slate-900 tracking-tight">
+            <h2 className="text-3xl font-semibold text-[#000914] tracking-tight">
               Common questions
             </h2>
           </div>
@@ -235,13 +235,13 @@ export default function GoogleAdsPage() {
             {googleAdsFAQs.map((faq) => (
               <details
                 key={faq.question}
-                className="group bg-white border border-slate-200 rounded-xl overflow-hidden"
+                className="group bg-white border border-gray-200 rounded-lg overflow-hidden"
               >
                 <summary className="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none">
-                  <span className="text-base font-semibold text-slate-900">{faq.question}</span>
+                  <span className="text-base font-semibold text-[#000914]">{faq.question}</span>
                   <ChevronDownIcon className="w-5 h-5 text-slate-400 flex-shrink-0 group-open:rotate-180 transition-transform" />
                 </summary>
-                <div className="px-6 pb-5 border-t border-slate-100">
+                <div className="px-6 pb-5 border-t border-gray-100">
                   <p className="text-sm text-slate-600 leading-relaxed pt-4">{faq.answer}</p>
                 </div>
               </details>
@@ -251,15 +251,15 @@ export default function GoogleAdsPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-slate-900 py-20 lg:py-28">
+      <section className="bg-[#000914] py-20 lg:py-28">
         <div className="max-w-6xl mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-semibold text-white tracking-tight mb-5 max-w-2xl mx-auto">
             Get a clearer view of what your Google Ads account should be doing.
           </h2>
-          <p className="text-slate-400 leading-relaxed mb-10 max-w-xl mx-auto">
+          <p className="text-[#FBFBFB]/70 leading-relaxed mb-10 max-w-xl mx-auto">
             Book a consultation and we&apos;ll take a direct look at your current setup, your goals, and where paid search can make the biggest difference.
           </p>
-          <Button href="/contact" size="lg">
+          <Button href="/contact" size="lg" variant="outline">
             Book a Consultation
           </Button>
         </div>

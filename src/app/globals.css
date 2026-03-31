@@ -2,19 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800&display=swap');
 
 @layer base {
+  :root {
+    --font-sans: 'Barlow', sans-serif;
+  }
+
   html {
     scroll-behavior: smooth;
   }
 
   body {
-    @apply bg-white text-slate-900 antialiased;
+    font-family: var(--font-sans);
+    @apply bg-white text-[#121010] antialiased;
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-semibold tracking-tight;
+  }
+
+  button {
+    border-radius: 0;
   }
 }
 

@@ -21,14 +21,14 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-white pt-20 pb-16 lg:pt-28 lg:pb-20 border-b border-slate-200">
+      <section className="bg-[#000914] py-24 lg:py-32">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="max-w-2xl">
-            <SectionLabel>Contact</SectionLabel>
-            <h1 className="text-4xl sm:text-5xl font-semibold text-slate-900 leading-tight tracking-tight mb-6">
+            <SectionLabel className="text-white/60">Contact</SectionLabel>
+            <h1 className="text-4xl sm:text-5xl font-semibold text-white leading-tight tracking-tight mb-6">
               Let&apos;s talk.
             </h1>
-            <p className="text-lg text-slate-600 leading-relaxed">
+            <p className="text-lg text-[#FBFBFB]/80 leading-relaxed">
               Tell us about your business, your goals, and what&apos;s not working. We&apos;ll take it from there.
             </p>
           </div>
@@ -44,13 +44,13 @@ export default function ContactPage() {
             <div className="lg:col-span-2 space-y-10">
               <div>
                 <SectionLabel>Good Fit Projects</SectionLabel>
-                <h2 className="text-xl font-semibold text-slate-900 mb-5">
+                <h2 className="text-xl font-semibold text-[#000914] mb-5">
                   What kinds of projects we take on
                 </h2>
                 <div className="space-y-3">
                   {goodFitProjects.map((item) => (
                     <div key={item} className="flex items-start gap-3">
-                      <CheckCircleIcon className="w-5 h-5 text-copper flex-shrink-0 mt-0.5" />
+                      <CheckCircleIcon className="w-5 h-5 text-[#000914] flex-shrink-0 mt-0.5" />
                       <span className="text-sm text-slate-700 leading-relaxed">{item}</span>
                     </div>
                   ))}
@@ -59,7 +59,7 @@ export default function ContactPage() {
 
               <div>
                 <SectionLabel>What Happens Next</SectionLabel>
-                <h2 className="text-xl font-semibold text-slate-900 mb-4">
+                <h2 className="text-xl font-semibold text-[#000914] mb-4">
                   After you submit
                 </h2>
                 <p className="text-sm text-slate-600 leading-relaxed">

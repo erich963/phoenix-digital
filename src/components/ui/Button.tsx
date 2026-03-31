@@ -16,11 +16,11 @@ interface ButtonProps {
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    'bg-copper text-white hover:bg-copper-600 border border-transparent',
+    'bg-[#000914] text-white hover:bg-[#04153a] border border-transparent uppercase tracking-wide',
   secondary:
-    'bg-transparent text-copper border border-copper hover:bg-copper-50',
+    'bg-transparent text-[#000914] border border-[#000914] hover:bg-[#000914] hover:text-white uppercase tracking-wide',
   outline:
-    'bg-transparent text-slate-700 border border-slate-300 hover:border-copper hover:text-copper',
+    'bg-transparent text-white border border-white hover:bg-white hover:text-[#000914] uppercase tracking-wide',
 }
 
 const sizeClasses: Record<ButtonSize, string> = {
@@ -39,7 +39,7 @@ export default function Button({
   className = '',
   disabled = false,
 }: ButtonProps) {
-  const classes = `inline-flex items-center justify-center font-semibold rounded-lg transition-colors ${variantClasses[variant]} ${sizeClasses[size]} ${disabled ? 'opacity-50 cursor-not-allowed' : ''} ${className}`
+  const classes = `inline-flex items-center justify-center font-semibold rounded-none transition-colors ${variantClasses[variant]} ${sizeClasses[size]} ${disabled ? 'opacity-50 cursor-not-allowed' : ''} ${className}`
 
   if (href) {
     return (

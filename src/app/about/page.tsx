@@ -46,14 +46,14 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-white pt-20 pb-24 lg:pt-28 lg:pb-32 border-b border-slate-200">
+      <section className="bg-[#000914] py-32 lg:py-40">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="max-w-3xl">
-            <SectionLabel>About Phoenix Digital</SectionLabel>
-            <h1 className="text-4xl sm:text-5xl font-semibold text-slate-900 leading-tight tracking-tight mb-6">
+            <SectionLabel className="text-white/60">About Phoenix Digital</SectionLabel>
+            <h1 className="text-4xl sm:text-5xl font-semibold text-white leading-tight tracking-tight mb-6">
               Built for clarity. Focused on outcomes.
             </h1>
-            <p className="text-lg text-slate-600 leading-relaxed max-w-2xl">
+            <p className="text-lg text-[#FBFBFB]/80 leading-relaxed max-w-2xl">
               Phoenix Digital exists because the old agency model stopped working for most B2B businesses. Too many agencies are built around complexity — large teams, opaque retainers, and broad deliverables that are hard to measure. We were built as a direct response to that.
             </p>
           </div>
@@ -61,12 +61,12 @@ export default function AboutPage() {
       </section>
 
       {/* The Story */}
-      <section className="bg-slate-50 border-b border-slate-200 py-20 lg:py-28">
+      <section className="bg-gray-50 border-b border-gray-200 py-20 lg:py-28">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
               <SectionLabel>Our Story</SectionLabel>
-              <h2 className="text-3xl font-semibold text-slate-900 tracking-tight mb-6">
+              <h2 className="text-3xl font-semibold text-[#000914] tracking-tight mb-6">
                 A direct response to a broken model
               </h2>
               <div className="space-y-4 text-slate-600 leading-relaxed">
@@ -83,7 +83,7 @@ export default function AboutPage() {
             </div>
             <div>
               <SectionLabel>The Model</SectionLabel>
-              <h2 className="text-3xl font-semibold text-slate-900 tracking-tight mb-6">
+              <h2 className="text-3xl font-semibold text-[#000914] tracking-tight mb-6">
                 Lean, expert-led, AI-enabled
               </h2>
               <div className="space-y-4 text-slate-600 leading-relaxed">
@@ -103,11 +103,11 @@ export default function AboutPage() {
       </section>
 
       {/* Principles */}
-      <section className="bg-white py-20 lg:py-28 border-b border-slate-200">
+      <section className="bg-white py-20 lg:py-28 border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="mb-14">
             <SectionLabel>How We Work</SectionLabel>
-            <h2 className="text-3xl font-semibold text-slate-900 tracking-tight">
+            <h2 className="text-3xl font-semibold text-[#000914] tracking-tight">
               The principles behind every engagement
             </h2>
           </div>
@@ -115,10 +115,10 @@ export default function AboutPage() {
             {principles.map((principle) => (
               <div
                 key={principle.title}
-                className="bg-slate-50 border border-slate-200 rounded-2xl p-7"
+                className="bg-white border border-gray-200 rounded-lg p-7 shadow-[6px_6px_9px_rgba(0,0,0,0.2)]"
               >
-                <div className="w-8 h-1 bg-copper rounded-full mb-5" />
-                <h3 className="text-base font-semibold text-slate-900 mb-2">
+                <div className="w-8 h-1 bg-[#000914] mb-5" />
+                <h3 className="text-base font-semibold text-[#000914] mb-2">
                   {principle.title}
                 </h3>
                 <p className="text-sm text-slate-600 leading-relaxed">
@@ -131,12 +131,12 @@ export default function AboutPage() {
       </section>
 
       {/* Founder */}
-      <section className="bg-slate-50 border-b border-slate-200 py-20 lg:py-28">
+      <section className="bg-gray-50 border-b border-gray-200 py-20 lg:py-28">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
               <SectionLabel>The Founder</SectionLabel>
-              <h2 className="text-3xl font-semibold text-slate-900 tracking-tight mb-6">
+              <h2 className="text-3xl font-semibold text-[#000914] tracking-tight mb-6">
                 Eric H. — Portland, Maine
               </h2>
               <div className="space-y-4 text-slate-600 leading-relaxed">
@@ -153,16 +153,16 @@ export default function AboutPage() {
             </div>
             <div>
               <SectionLabel>Areas of Expertise</SectionLabel>
-              <h2 className="text-3xl font-semibold text-slate-900 tracking-tight mb-6">
+              <h2 className="text-3xl font-semibold text-[#000914] tracking-tight mb-6">
                 Deep across the B2B growth stack
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {expertise.map((item) => (
                   <div
                     key={item}
-                    className="flex items-center gap-2.5 bg-white border border-slate-200 rounded-lg px-4 py-3"
+                    className="flex items-center gap-2.5 bg-white border border-gray-200 rounded-lg px-4 py-3"
                   >
-                    <div className="w-1.5 h-1.5 rounded-full bg-copper flex-shrink-0" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#000914] flex-shrink-0" />
                     <span className="text-sm text-slate-700">{item}</span>
                   </div>
                 ))}
@@ -173,15 +173,15 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-slate-900 py-20 lg:py-28">
+      <section className="bg-[#000914] py-20 lg:py-28">
         <div className="max-w-6xl mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-semibold text-white tracking-tight mb-5 max-w-2xl mx-auto">
             Ready to work with a team that values clarity over complexity?
           </h2>
-          <p className="text-slate-400 leading-relaxed mb-10 max-w-xl mx-auto">
+          <p className="text-[#FBFBFB]/70 leading-relaxed mb-10 max-w-xl mx-auto">
             Let&apos;s talk about your goals, your current setup, and where focused, senior-level work can make the biggest difference.
           </p>
-          <Button href="/contact" size="lg">
+          <Button href="/contact" size="lg" variant="outline">
             Book a Consultation
           </Button>
         </div>

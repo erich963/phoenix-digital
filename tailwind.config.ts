@@ -9,6 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        navy: {
+          DEFAULT: '#000914',
+          dark: '#04153a',
+          light: '#0a2260',
+        },
+        brand: {
+          DEFAULT: '#000914',
+          dark: '#04153a',
+          light: '#0a2260',
+        },
+        offwhite: '#FBFBFB',
         copper: {
           DEFAULT: '#C17A3A',
           50: '#FBF4EC',
@@ -24,7 +35,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        sans: ['Barlow', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
     },
   },

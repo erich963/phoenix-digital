@@ -57,17 +57,17 @@ export default function WebsitesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-white pt-20 pb-24 lg:pt-28 lg:pb-32 border-b border-slate-200">
+      <section className="bg-[#000914] py-32 lg:py-40">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="max-w-3xl">
-            <SectionLabel>Websites & Landing Pages</SectionLabel>
-            <h1 className="text-4xl sm:text-5xl font-semibold text-slate-900 leading-tight tracking-tight mb-6">
+            <SectionLabel className="text-white/60">Websites & Landing Pages</SectionLabel>
+            <h1 className="text-4xl sm:text-5xl font-semibold text-white leading-tight tracking-tight mb-6">
               Fast, conversion-focused websites and landing pages for B2B growth.
             </h1>
-            <p className="text-lg text-slate-600 leading-relaxed mb-10 max-w-2xl">
+            <p className="text-lg text-[#FBFBFB]/80 leading-relaxed mb-10 max-w-2xl">
               Built to support lead generation and paid acquisition — not just to look good.
             </p>
-            <Button href="/contact" size="lg">
+            <Button href="/contact" size="lg" variant="outline">
               Book a Consultation
             </Button>
           </div>
@@ -75,11 +75,11 @@ export default function WebsitesPage() {
       </section>
 
       {/* What We Build */}
-      <section className="bg-slate-50 border-b border-slate-200 py-20 lg:py-28">
+      <section className="bg-gray-50 border-b border-gray-200 py-20 lg:py-28">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="mb-14">
             <SectionLabel>What We Build</SectionLabel>
-            <h2 className="text-3xl font-semibold text-slate-900 tracking-tight mb-4">
+            <h2 className="text-3xl font-semibold text-[#000914] tracking-tight mb-4">
               Four types of projects
             </h2>
             <p className="text-slate-600 max-w-xl leading-relaxed">
@@ -90,16 +90,16 @@ export default function WebsitesPage() {
             {projectTypes.map((project) => (
               <div
                 key={project.title}
-                className="bg-white border border-slate-200 rounded-2xl p-8"
+                className="bg-white border border-gray-200 rounded-lg p-8 shadow-[6px_6px_9px_rgba(0,0,0,0.2)]"
               >
-                <div className="w-8 h-1 bg-copper rounded-full mb-5" />
-                <h3 className="text-xl font-semibold text-slate-900 mb-3">{project.title}</h3>
+                <div className="w-8 h-1 bg-[#000914] mb-5" />
+                <h3 className="text-xl font-semibold text-[#000914] mb-3">{project.title}</h3>
                 <p className="text-sm text-slate-600 leading-relaxed mb-5">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="inline-block text-xs font-medium text-copper bg-copper-50 border border-copper-200 rounded-full px-3 py-1"
+                      className="inline-block text-xs font-medium text-[#000914] bg-gray-100 border border-gray-200 rounded-none px-3 py-1"
                     >
                       {tag}
                     </span>
@@ -112,12 +112,12 @@ export default function WebsitesPage() {
       </section>
 
       {/* Why This Matters for Paid Search */}
-      <section className="bg-white py-20 lg:py-28 border-b border-slate-200">
+      <section className="bg-white py-20 lg:py-28 border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <SectionLabel>Why This Matters for Paid Search</SectionLabel>
-              <h2 className="text-3xl font-semibold text-slate-900 tracking-tight mb-6">
+              <h2 className="text-3xl font-semibold text-[#000914] tracking-tight mb-6">
                 Your landing page is half the battle
               </h2>
               <p className="text-slate-600 leading-relaxed">
@@ -128,9 +128,9 @@ export default function WebsitesPage() {
               {whyPaidSearch.map((item) => (
                 <div
                   key={item}
-                  className="flex items-start gap-3 bg-slate-50 border border-slate-200 rounded-xl px-5 py-4"
+                  className="flex items-start gap-3 bg-gray-50 border border-gray-200 rounded-lg px-5 py-4"
                 >
-                  <CheckCircleIcon className="w-5 h-5 text-copper flex-shrink-0 mt-0.5" />
+                  <CheckCircleIcon className="w-5 h-5 text-[#000914] flex-shrink-0 mt-0.5" />
                   <span className="text-slate-700 text-sm leading-relaxed">{item}</span>
                 </div>
               ))}
@@ -140,12 +140,12 @@ export default function WebsitesPage() {
       </section>
 
       {/* What's Included */}
-      <section className="bg-slate-50 border-b border-slate-200 py-20 lg:py-28">
+      <section className="bg-gray-50 border-b border-gray-200 py-20 lg:py-28">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
               <SectionLabel>What&apos;s Included</SectionLabel>
-              <h2 className="text-3xl font-semibold text-slate-900 tracking-tight mb-6">
+              <h2 className="text-3xl font-semibold text-[#000914] tracking-tight mb-6">
                 Everything needed to perform
               </h2>
               <p className="text-slate-600 leading-relaxed">
@@ -154,8 +154,8 @@ export default function WebsitesPage() {
             </div>
             <div className="grid grid-cols-1 gap-3">
               {whatWeInclude.map((item) => (
-                <div key={item} className="flex items-center gap-3 bg-white border border-slate-200 rounded-lg px-5 py-3.5">
-                  <CheckCircleIcon className="w-4 h-4 text-copper flex-shrink-0" />
+                <div key={item} className="flex items-center gap-3 bg-white border border-gray-200 rounded-lg px-5 py-3.5">
+                  <CheckCircleIcon className="w-4 h-4 text-[#000914] flex-shrink-0" />
                   <span className="text-sm text-slate-700">{item}</span>
                 </div>
               ))}
@@ -165,14 +165,14 @@ export default function WebsitesPage() {
       </section>
 
       {/* Tech Stack callout */}
-      <section className="bg-copper-50 border-y border-copper-200 py-14 lg:py-16">
+      <section className="bg-[#000914] py-14 lg:py-16">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-center gap-8">
             <div className="flex-1">
-              <h2 className="text-2xl font-semibold text-slate-900 mb-3">
+              <h2 className="text-2xl font-semibold text-white mb-3">
                 Modern stack built for performance
               </h2>
-              <p className="text-slate-700 leading-relaxed text-sm max-w-xl">
+              <p className="text-[#FBFBFB]/70 leading-relaxed text-sm max-w-xl">
                 Every site and landing page is built on a modern web stack — Next.js, React, and Tailwind CSS — built for fast load times, reliable deployment, and easy handoff. No bloated CMS dependencies or legacy frameworks.
               </p>
             </div>
@@ -180,7 +180,7 @@ export default function WebsitesPage() {
               {['Next.js', 'React', 'Tailwind CSS', 'Vercel'].map((tech) => (
                 <span
                   key={tech}
-                  className="inline-block text-sm font-semibold text-copper bg-white border border-copper-200 rounded-lg px-4 py-2"
+                  className="inline-block text-sm font-semibold text-white bg-white/10 border border-white/30 rounded-none px-4 py-2"
                 >
                   {tech}
                 </span>
@@ -191,11 +191,11 @@ export default function WebsitesPage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-white py-20 lg:py-28 border-b border-slate-200">
+      <section className="bg-white py-20 lg:py-28 border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="mb-14">
             <SectionLabel>FAQ</SectionLabel>
-            <h2 className="text-3xl font-semibold text-slate-900 tracking-tight">
+            <h2 className="text-3xl font-semibold text-[#000914] tracking-tight">
               Common questions
             </h2>
           </div>
@@ -203,13 +203,13 @@ export default function WebsitesPage() {
             {websitesFAQs.map((faq) => (
               <details
                 key={faq.question}
-                className="group bg-slate-50 border border-slate-200 rounded-xl overflow-hidden"
+                className="group bg-gray-50 border border-gray-200 rounded-lg overflow-hidden"
               >
                 <summary className="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none">
-                  <span className="text-base font-semibold text-slate-900">{faq.question}</span>
+                  <span className="text-base font-semibold text-[#000914]">{faq.question}</span>
                   <ChevronDownIcon className="w-5 h-5 text-slate-400 flex-shrink-0 group-open:rotate-180 transition-transform" />
                 </summary>
-                <div className="px-6 pb-5 border-t border-slate-200">
+                <div className="px-6 pb-5 border-t border-gray-200">
                   <p className="text-sm text-slate-600 leading-relaxed pt-4">{faq.answer}</p>
                 </div>
               </details>
@@ -219,15 +219,15 @@ export default function WebsitesPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-slate-900 py-20 lg:py-28">
+      <section className="bg-[#000914] py-20 lg:py-28">
         <div className="max-w-6xl mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-semibold text-white tracking-tight mb-5 max-w-2xl mx-auto">
             Ready to build a site that converts?
           </h2>
-          <p className="text-slate-400 leading-relaxed mb-10 max-w-xl mx-auto">
+          <p className="text-[#FBFBFB]/70 leading-relaxed mb-10 max-w-xl mx-auto">
             Whether you need a single landing page or a full B2B website, let&apos;s talk about your goals and what the right project looks like.
           </p>
-          <Button href="/contact" size="lg">
+          <Button href="/contact" size="lg" variant="outline">
             Book a Consultation
           </Button>
         </div>
