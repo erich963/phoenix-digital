@@ -8,33 +8,38 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['Barlow', 'sans-serif'],
-      },
       colors: {
         navy: {
           DEFAULT: '#000914',
-          hover: '#013BA5',
           dark: '#04153a',
+          light: '#0a2260',
         },
-        orange: '#ff910a',
+        brand: {
+          DEFAULT: '#000914',
+          dark: '#04153a',
+          light: '#0a2260',
+        },
         offwhite: '#FBFBFB',
+        copper: {
+          DEFAULT: '#C17A3A',
+          50: '#FBF4EC',
+          100: '#F5E5D0',
+          200: '#E9C99E',
+          300: '#DDAC6C',
+          400: '#D1903A',
+          500: '#C17A3A',
+          600: '#A3652F',
+          700: '#855024',
+          800: '#673C1A',
+          900: '#49270F',
+        },
       },
-      fontSize: {
-        'display': ['clamp(1.8rem, calc(1.8rem + ((1vw - 0.2rem) * 2.829)), 3.25rem)', { lineHeight: '1.15', fontWeight: '600' }],
-        'heading': ['clamp(1.563rem, calc(1.563rem + ((1vw - 0.2rem) * 2.072)), 2.625rem)', { lineHeight: '1.2', fontWeight: '600' }],
-        'subheading': ['clamp(1.39rem, calc(1.39rem + ((1vw - 0.2rem) * 1.5)), 1.85rem)', { lineHeight: '1.3', fontWeight: '600' }],
-        'body-lg': ['1.05rem', { lineHeight: '1.6' }],
-      },
-      spacing: {
-        'section': 'min(6.5rem, 8vw)',
-        'section-y': '5rem',
-      },
-      boxShadow: {
-        'card': '6px 6px 9px rgba(0,0,0,0.2)',
+      fontFamily: {
+        sans: ['Barlow', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
     },
   },
   plugins: [],
 }
+
 export default config

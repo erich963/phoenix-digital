@@ -15,20 +15,17 @@ interface ButtonProps {
 }
 
 const variantClasses: Record<ButtonVariant, string> = {
-  // Primary: navy bg, white text, hover navy-hover (#013BA5)
   primary:
-    'bg-[#000914] text-[#FBFBFB] hover:bg-[#013BA5] border border-[#000914] uppercase tracking-wider font-semibold',
-  // Secondary: white bg, navy border + text, hover: navy bg white text
+    'bg-[#000914] text-white hover:bg-[#04153a] border border-transparent uppercase tracking-wide',
   secondary:
-    'bg-white text-[#000914] border border-[#000914] hover:bg-[#000914] hover:text-[#FBFBFB] uppercase tracking-wider font-semibold',
-  // Outline: transparent bg, white border + text (for dark backgrounds), hover: white bg navy text
+    'bg-transparent text-[#000914] border border-[#000914] hover:bg-[#000914] hover:text-white uppercase tracking-wide',
   outline:
-    'bg-transparent text-[#FBFBFB] border border-[#FBFBFB] hover:bg-white hover:text-[#000914] uppercase tracking-wider font-semibold',
+    'bg-transparent text-white border border-white hover:bg-white hover:text-[#000914] uppercase tracking-wide',
 }
 
 const sizeClasses: Record<ButtonSize, string> = {
   sm: 'px-4 py-2 text-sm',
-  md: 'px-5 py-2.5 text-sm',
+  md: 'px-6 py-3 text-sm',
   lg: 'px-8 py-4 text-base',
 }
 
@@ -42,7 +39,7 @@ export default function Button({
   className = '',
   disabled = false,
 }: ButtonProps) {
-  const classes = `inline-flex items-center justify-center rounded-none transition-colors ${variantClasses[variant]} ${sizeClasses[size]} ${disabled ? 'opacity-50 cursor-not-allowed' : ''} ${className}`
+  const classes = `inline-flex items-center justify-center font-semibold rounded-none transition-colors ${variantClasses[variant]} ${sizeClasses[size]} ${disabled ? 'opacity-50 cursor-not-allowed' : ''} ${className}`
 
   if (href) {
     return (
