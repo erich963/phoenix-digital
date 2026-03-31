@@ -48,7 +48,7 @@ export default function ContactForm() {
   if (submitted) {
     return (
       <div className="bg-gray-50 border border-gray-200 rounded-lg p-10 text-center">
-        <div className="w-12 h-12 bg-[#000914] rounded-none flex items-center justify-center mx-auto mb-4">
+        <div className="w-12 h-12 bg-[#ff910a] rounded-none flex items-center justify-center mx-auto mb-4">
           <svg
             className="w-6 h-6 text-white"
             fill="none"
