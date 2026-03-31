@@ -47,7 +47,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#020f2a] py-32 lg:py-40" style={sectionPad}>
+      <section className="bg-[#000914] py-32 lg:py-40" style={sectionPad}>
         <div className="max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-white/60 mb-4">About Phoenix Digital</p>
           <h1
@@ -67,7 +67,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
             <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">Our Story</p>
-            <h2 className="text-3xl font-semibold text-[#020f2a] mb-6">
+            <h2 className="text-3xl font-semibold text-[#000914] mb-6">
               A direct response to a broken model
             </h2>
             <div className="space-y-4 text-[#121010]/70 leading-relaxed">
@@ -84,7 +84,7 @@ export default function AboutPage() {
           </div>
           <div>
             <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">The Model</p>
-            <h2 className="text-3xl font-semibold text-[#020f2a] mb-6">
+            <h2 className="text-3xl font-semibold text-[#000914] mb-6">
               Lean, expert-led, AI-enabled
             </h2>
             <div className="space-y-4 text-[#121010]/70 leading-relaxed">
@@ -106,7 +106,7 @@ export default function AboutPage() {
       <section className="bg-white py-20 lg:py-28 border-b border-gray-200" style={sectionPad}>
         <div className="mb-14">
           <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">How We Work</p>
-          <h2 className="text-3xl font-semibold text-[#020f2a]">
+          <h2 className="text-3xl font-semibold text-[#000914]">
             The principles behind every engagement
           </h2>
         </div>
@@ -117,8 +117,8 @@ export default function AboutPage() {
               className="bg-white border border-gray-200 p-7"
               style={{ boxShadow: '6px 6px 9px rgba(0,0,0,0.2)' }}
             >
-              <div className="w-8 h-1 bg-[#020f2a] mb-5" />
-              <h3 className="text-base font-semibold text-[#020f2a] mb-2">
+              <div className="w-8 h-1 bg-[#000914] mb-5" />
+              <h3 className="text-base font-semibold text-[#000914] mb-2">
                 {principle.title}
               </h3>
               <p className="text-sm text-[#121010]/60 leading-relaxed">
@@ -134,7 +134,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
             <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">The Founder</p>
-            <h2 className="text-3xl font-semibold text-[#020f2a] mb-6">
+            <h2 className="text-3xl font-semibold text-[#000914] mb-6">
               Eric H. — Portland, Maine
             </h2>
             <div className="space-y-4 text-[#121010]/70 leading-relaxed">
@@ -151,7 +151,7 @@ export default function AboutPage() {
           </div>
           <div>
             <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">Areas of Expertise</p>
-            <h2 className="text-3xl font-semibold text-[#020f2a] mb-6">
+            <h2 className="text-3xl font-semibold text-[#000914] mb-6">
               Deep across the B2B growth stack
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -160,7 +160,7 @@ export default function AboutPage() {
                   key={item}
                   className="flex items-center gap-2.5 bg-white border border-gray-200 px-4 py-3"
                 >
-                  <div className="w-1.5 h-1.5 rounded-full bg-[#020f2a] flex-shrink-0" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#000914] flex-shrink-0" />
                   <span className="text-sm text-[#121010]/80">{item}</span>
                 </div>
               ))}
@@ -170,7 +170,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#020f2a] py-20 lg:py-28" style={sectionPad}>
+      <section className="bg-[#000914] py-20 lg:py-28" style={sectionPad}>
         <div className="max-w-2xl mx-auto text-center">
           <h2
             className="text-[#FBFBFB] font-semibold mb-5"

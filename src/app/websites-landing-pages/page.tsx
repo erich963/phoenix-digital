@@ -58,7 +58,7 @@ export default function WebsitesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#020f2a] py-32 lg:py-40" style={sectionPad}>
+      <section className="bg-[#000914] py-32 lg:py-40" style={sectionPad}>
         <div className="max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-white/60 mb-4">Websites &amp; Landing Pages</p>
           <h1
@@ -80,7 +80,7 @@ export default function WebsitesPage() {
       <section className="bg-gray-50 border-b border-gray-200 py-20 lg:py-28" style={sectionPad}>
         <div className="mb-14">
           <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">What We Build</p>
-          <h2 className="text-3xl font-semibold text-[#020f2a] mb-4">
+          <h2 className="text-3xl font-semibold text-[#000914] mb-4">
             Four types of projects
           </h2>
           <p className="text-[#121010]/70 max-w-xl leading-relaxed">
@@ -94,14 +94,14 @@ export default function WebsitesPage() {
               className="bg-white border border-gray-200 p-8"
               style={{ boxShadow: '6px 6px 9px rgba(0,0,0,0.2)' }}
             >
-              <div className="w-8 h-1 bg-[#020f2a] mb-5" />
-              <h3 className="text-xl font-semibold text-[#020f2a] mb-3">{project.title}</h3>
+              <div className="w-8 h-1 bg-[#000914] mb-5" />
+              <h3 className="text-xl font-semibold text-[#000914] mb-3">{project.title}</h3>
               <p className="text-sm text-[#121010]/60 leading-relaxed mb-5">{project.description}</p>
               <div className="flex flex-wrap gap-2">
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="inline-block text-xs font-medium text-[#020f2a] bg-gray-100 border border-gray-200 rounded-none px-3 py-1"
+                    className="inline-block text-xs font-medium text-[#000914] bg-gray-100 border border-gray-200 rounded-none px-3 py-1"
                   >
                     {tag}
                   </span>
@@ -117,7 +117,7 @@ export default function WebsitesPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">Why This Matters for Paid Search</p>
-            <h2 className="text-3xl font-semibold text-[#020f2a] mb-6">
+            <h2 className="text-3xl font-semibold text-[#000914] mb-6">
               Your landing page is half the battle
             </h2>
             <p className="text-[#121010]/70 leading-relaxed">
@@ -130,7 +130,7 @@ export default function WebsitesPage() {
                 key={item}
                 className="flex items-start gap-3 bg-gray-50 border border-gray-200 px-5 py-4"
               >
-                <CheckCircleIcon className="w-5 h-5 text-[#020f2a] flex-shrink-0 mt-0.5" />
+                <CheckCircleIcon className="w-5 h-5 text-[#000914] flex-shrink-0 mt-0.5" />
                 <span className="text-[#121010]/80 text-sm leading-relaxed">{item}</span>
               </div>
             ))}
@@ -143,7 +143,7 @@ export default function WebsitesPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">What&apos;s Included</p>
-            <h2 className="text-3xl font-semibold text-[#020f2a] mb-6">
+            <h2 className="text-3xl font-semibold text-[#000914] mb-6">
               Everything needed to perform
             </h2>
             <p className="text-[#121010]/70 leading-relaxed">
@@ -153,7 +153,7 @@ export default function WebsitesPage() {
           <div className="grid grid-cols-1 gap-3">
             {whatWeInclude.map((item) => (
               <div key={item} className="flex items-center gap-3 bg-white border border-gray-200 px-5 py-3.5">
-                <CheckCircleIcon className="w-4 h-4 text-[#020f2a] flex-shrink-0" />
+                <CheckCircleIcon className="w-4 h-4 text-[#000914] flex-shrink-0" />
                 <span className="text-sm text-[#121010]/80">{item}</span>
               </div>
             ))}
@@ -162,7 +162,7 @@ export default function WebsitesPage() {
       </section>
 
       {/* Tech Stack callout */}
-      <section className="bg-[#020f2a] py-14 lg:py-16" style={sectionPad}>
+      <section className="bg-[#000914] py-14 lg:py-16" style={sectionPad}>
         <div className="flex flex-col md:flex-row md:items-center gap-8">
           <div className="flex-1">
             <h2 className="text-2xl font-semibold text-[#FBFBFB] mb-3">
@@ -189,7 +189,7 @@ export default function WebsitesPage() {
       <section className="bg-white py-20 lg:py-28 border-b border-gray-200" style={sectionPad}>
         <div className="mb-14">
           <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">FAQ</p>
-          <h2 className="text-3xl font-semibold text-[#020f2a]">
+          <h2 className="text-3xl font-semibold text-[#000914]">
             Common questions
           </h2>
         </div>
@@ -200,7 +200,7 @@ export default function WebsitesPage() {
               className="group bg-gray-50 border border-gray-200 overflow-hidden"
             >
               <summary className="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none">
-                <span className="text-base font-semibold text-[#020f2a]">{faq.question}</span>
+                <span className="text-base font-semibold text-[#000914]">{faq.question}</span>
                 <ChevronDownIcon className="w-5 h-5 text-[#121010]/30 flex-shrink-0 group-open:rotate-180 transition-transform" />
               </summary>
               <div className="px-6 pb-5 border-t border-gray-200">
@@ -212,7 +212,7 @@ export default function WebsitesPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#020f2a] py-20 lg:py-28" style={sectionPad}>
+      <section className="bg-[#000914] py-20 lg:py-28" style={sectionPad}>
         <div className="max-w-2xl mx-auto text-center">
           <h2
             className="text-[#FBFBFB] font-semibold mb-5"

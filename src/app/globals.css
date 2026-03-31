@@ -16,14 +16,14 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Barlow', sans-serif;
     font-weight: 600;
-    color: #020f2a;
+    color: #000914;
     line-height: 1.2;
   }
   a {
-    color: #020f2a;
+    color: #000914;
   }
   a:hover {
-    color: #0a2d6e;
+    color: #013BA5;
   }
 }
 
