@@ -44,7 +44,7 @@ export default function HomePage() {
             </ul>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold uppercase tracking-wider text-[#020f2a] bg-white border border-white hover:bg-[#0a2d6e] hover:text-white hover:border-[#0a2d6e] rounded-none transition-colors"
+              className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold uppercase tracking-wider text-[#000914] bg-white border border-white hover:bg-[#013BA5] hover:text-white hover:border-[#013BA5] rounded-none transition-colors"
             >
               Free Consultation
             </Link>
@@ -55,7 +55,7 @@ export default function HomePage() {
       {/* Section 2: Services */}
       <section className="bg-white py-20 lg:py-28" style={sectionPad}>
         <h2
-          className="text-[#020f2a] font-semibold mb-12"
+          className="text-[#000914] font-semibold mb-12"
           style={{ fontSize: 'clamp(1.563rem, calc(1.563rem + ((1vw - 0.2rem) * 2.072)), 2.625rem)' }}
         >
           Our Services
@@ -68,7 +68,7 @@ export default function HomePage() {
             style={{ boxShadow: '6px 6px 9px rgba(0,0,0,0.2)' }}
           >
             <h3
-              className="text-[#020f2a] font-semibold mb-6"
+              className="text-[#000914] font-semibold mb-6"
               style={{ fontSize: 'clamp(1.39rem, calc(1.39rem + ((1vw - 0.2rem) * 1.5)), 1.85rem)' }}
             >
               Google Ads Management
@@ -82,13 +82,13 @@ export default function HomePage() {
                 { price: '$1,500/month', spend: '$5,001–$10,000/month in ad spend' },
               ].map((row) => (
                 <div key={row.price} className="flex flex-col sm:flex-row sm:items-center gap-1 px-4 py-3">
-                  <span className="font-semibold text-[#020f2a] text-sm sm:w-36 flex-shrink-0">{row.price}</span>
+                  <span className="font-semibold text-[#000914] text-sm sm:w-36 flex-shrink-0">{row.price}</span>
                   <span className="text-sm text-[#121010]/70">{row.spend}</span>
                 </div>
               ))}
             </div>
 
-            <p className="font-semibold text-[#020f2a] text-sm mb-3">What&apos;s Included:</p>
+            <p className="font-semibold text-[#000914] text-sm mb-3">What&apos;s Included:</p>
             <ul className="space-y-2 mb-6">
               {[
                 'Google Ads account & campaign setup',
@@ -97,7 +97,7 @@ export default function HomePage() {
                 'One 60-minute quarterly strategy & progress review',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2 text-sm text-[#121010]">
-                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#020f2a] flex-shrink-0" />
+                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#000914] flex-shrink-0" />
                   {item}
                 </li>
               ))}
@@ -113,7 +113,7 @@ export default function HomePage() {
             style={{ boxShadow: '6px 6px 9px rgba(0,0,0,0.2)' }}
           >
             <h3
-              className="text-[#020f2a] font-semibold mb-4"
+              className="text-[#000914] font-semibold mb-4"
               style={{ fontSize: 'clamp(1.39rem, calc(1.39rem + ((1vw - 0.2rem) * 1.5)), 1.85rem)' }}
             >
               Strategy Consultations
@@ -132,7 +132,7 @@ export default function HomePage() {
                 { title: 'Applied AI Strategy', desc: 'Identify realistic opportunities to use AI across research' },
               ].map((cat) => (
                 <div key={cat.title} className="bg-gray-50 p-4 rounded-sm">
-                  <p className="font-semibold text-[#020f2a] text-sm mb-1">{cat.title}</p>
+                  <p className="font-semibold text-[#000914] text-sm mb-1">{cat.title}</p>
                   <p className="text-xs text-[#121010]/60 leading-relaxed">{cat.desc}</p>
                 </div>
               ))}
@@ -148,7 +148,7 @@ export default function HomePage() {
           <div>
             <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">About Us</p>
             <h2
-              className="text-[#020f2a] font-semibold mb-6"
+              className="text-[#000914] font-semibold mb-6"
               style={{ fontSize: 'clamp(1.563rem, calc(1.563rem + ((1vw - 0.2rem) * 2.072)), 2.625rem)' }}
             >
               A Simpler, More Focused Approach to Lead Gen
@@ -167,7 +167,7 @@ export default function HomePage() {
             <div className="mt-8">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold uppercase tracking-wider text-[#FBFBFB] bg-[#020f2a] border border-[#020f2a] hover:bg-[#0a2d6e] hover:border-[#0a2d6e] rounded-none transition-colors"
+                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold uppercase tracking-wider text-[#FBFBFB] bg-[#000914] border border-[#000914] hover:bg-[#013BA5] hover:border-[#013BA5] rounded-none transition-colors"
               >
                 Schedule a Free Consultation
               </Link>
@@ -177,7 +177,7 @@ export default function HomePage() {
           {/* Image placeholder right */}
           <div
             className="hidden lg:flex items-center justify-center h-80 rounded-sm"
-            style={{ background: '#020f2a' }}
+            style={{ background: '#000914' }}
           >
             <span className="text-[#FBFBFB]/20 text-6xl font-bold">PD</span>
           </div>
@@ -187,7 +187,7 @@ export default function HomePage() {
       {/* Section 4: Testimonials */}
       <section className="bg-[#f9f9f9] py-20 lg:py-28" style={sectionPad}>
         <h2
-          className="text-[#020f2a] font-semibold mb-12"
+          className="text-[#000914] font-semibold mb-12"
           style={{ fontSize: 'clamp(1.563rem, calc(1.563rem + ((1vw - 0.2rem) * 2.072)), 2.625rem)' }}
         >
           What Our Clients Say
@@ -206,7 +206,7 @@ export default function HomePage() {
             <p className="text-[#121010] text-base leading-relaxed mb-6">
               &ldquo;After 10 years in commodity financing, I was laid off unexpectedly and needed to reposition myself quickly. Eric helped me think through my options clearly, with real patience and expertise. He gave me clarity when I needed it most.&rdquo;
             </p>
-            <p className="text-sm font-semibold text-[#020f2a]">— Katharine R.</p>
+            <p className="text-sm font-semibold text-[#000914]">— Katharine R.</p>
           </div>
 
           {/* Card 2 */}
@@ -222,13 +222,13 @@ export default function HomePage() {
             <p className="text-[#121010] text-base leading-relaxed mb-6">
               &ldquo;I&apos;ve worked with Eric on various projects over the last two years and can&apos;t recommend him enough. He brings exceptional attention to detail, creative thinking, and an honest approach that&apos;s rare in this industry.&rdquo;
             </p>
-            <p className="text-sm font-semibold text-[#020f2a]">— Jared W.</p>
+            <p className="text-sm font-semibold text-[#000914]">— Jared W.</p>
           </div>
         </div>
       </section>
 
       {/* Section 5: CTA Banner */}
-      <section className="bg-[#020f2a] py-20 lg:py-28" style={sectionPad}>
+      <section className="bg-[#000914] py-20 lg:py-28" style={sectionPad}>
         <div className="max-w-2xl">
           <h2
             className="text-[#FBFBFB] font-semibold mb-5"
@@ -241,7 +241,7 @@ export default function HomePage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold uppercase tracking-wider text-[#FBFBFB] border border-[#FBFBFB] hover:bg-white hover:text-[#020f2a] rounded-none transition-colors"
+            className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold uppercase tracking-wider text-[#FBFBFB] border border-[#FBFBFB] hover:bg-white hover:text-[#000914] rounded-none transition-colors"
           >
             Book a Consultation
           </Link>
@@ -251,7 +251,7 @@ export default function HomePage() {
       {/* Section 6: Team */}
       <section className="bg-white py-20 lg:py-28" style={sectionPad}>
         <h2
-          className="text-[#020f2a] font-semibold mb-12"
+          className="text-[#000914] font-semibold mb-12"
           style={{ fontSize: 'clamp(1.563rem, calc(1.563rem + ((1vw - 0.2rem) * 2.072)), 2.625rem)' }}
         >
           Meet Our Team
@@ -260,7 +260,7 @@ export default function HomePage() {
           {/* Avatar */}
           <div
             className="w-48 h-48 rounded-full flex items-center justify-center flex-shrink-0 text-white text-4xl font-bold"
-            style={{ background: '#020f2a' }}
+            style={{ background: '#000914' }}
           >
             E
           </div>
@@ -268,7 +268,7 @@ export default function HomePage() {
           {/* Info */}
           <div>
             <h3
-              className="text-[#020f2a] font-semibold mb-4"
+              className="text-[#000914] font-semibold mb-4"
               style={{ fontSize: 'clamp(1.39rem, calc(1.39rem + ((1vw - 0.2rem) * 1.5)), 1.85rem)' }}
             >
               Eric H.
@@ -285,7 +285,7 @@ export default function HomePage() {
                 'Automation',
               ].map((skill) => (
                 <div key={skill} className="flex items-center gap-2 text-sm text-[#121010]">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#020f2a] flex-shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#000914] flex-shrink-0" />
                   {skill}
                 </div>
               ))}
@@ -298,7 +298,7 @@ export default function HomePage() {
       <section className="bg-white py-20 lg:py-28 border-t border-gray-100" style={sectionPad}>
         <div className="max-w-2xl mb-10">
           <h2
-            className="text-[#020f2a] font-semibold mb-4"
+            className="text-[#000914] font-semibold mb-4"
             style={{ fontSize: 'clamp(1.563rem, calc(1.563rem + ((1vw - 0.2rem) * 2.072)), 2.625rem)' }}
           >
             Let&apos;s Talk

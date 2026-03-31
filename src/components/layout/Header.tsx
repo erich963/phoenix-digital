@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
@@ -22,15 +21,11 @@ export default function Header() {
       <div style={{ paddingLeft: 'min(6.5rem, 8vw)', paddingRight: 'min(6.5rem, 8vw)' }}>
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <Image
-              src="/logo.png"
-              alt="Phoenix Digital"
-              width={180}
-              height={33}
-              priority
-              className="h-8 w-auto"
-            />
+          <Link
+            href="/"
+            className="text-[#000914] font-bold text-xl tracking-tight hover:text-[#013BA5] transition-colors"
+          >
+            Phoenix Digital
           </Link>
 
           {/* Desktop Nav */}
@@ -39,8 +34,8 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-[0.95rem] font-medium transition-colors hover:text-[#0a2d6e] ${
-                  pathname === link.href ? 'text-[#0a2d6e]' : 'text-[#020f2a]'
+                className={`text-[0.95rem] font-medium transition-colors hover:text-[#013BA5] ${
+                  pathname === link.href ? 'text-[#013BA5]' : 'text-[#000914]'
                 }`}
               >
                 {link.label}
@@ -52,7 +47,7 @@ export default function Header() {
           <div className="hidden lg:flex items-center">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold uppercase tracking-wider text-[#FBFBFB] bg-[#020f2a] border border-[#020f2a] hover:bg-[#0a2d6e] rounded-none transition-colors"
+              className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold uppercase tracking-wider text-[#FBFBFB] bg-[#000914] border border-[#000914] hover:bg-[#013BA5] rounded-none transition-colors"
             >
               Contact
             </Link>
@@ -60,7 +55,7 @@ export default function Header() {
 
           {/* Mobile menu toggle */}
           <button
-            className="lg:hidden p-2 text-[#020f2a] hover:text-[#0a2d6e] transition-colors"
+            className="lg:hidden p-2 text-[#000914] hover:text-[#013BA5] transition-colors"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
@@ -82,10 +77,10 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className={`px-3 py-2.5 text-sm font-medium transition-colors hover:text-[#0a2d6e] hover:bg-gray-50 ${
+                className={`px-3 py-2.5 text-sm font-medium transition-colors hover:text-[#013BA5] hover:bg-gray-50 ${
                   pathname === link.href
-                    ? 'text-[#0a2d6e] bg-gray-50'
-                    : 'text-[#020f2a]'
+                    ? 'text-[#013BA5] bg-gray-50'
+                    : 'text-[#000914]'
                 }`}
               >
                 {link.label}
@@ -95,7 +90,7 @@ export default function Header() {
               <Link
                 href="/contact"
                 onClick={() => setMobileOpen(false)}
-                className="flex items-center justify-center w-full px-5 py-3 text-sm font-semibold uppercase tracking-wider text-[#FBFBFB] bg-[#020f2a] border border-[#020f2a] hover:bg-[#0a2d6e] rounded-none transition-colors"
+                className="flex items-center justify-center w-full px-5 py-3 text-sm font-semibold uppercase tracking-wider text-[#FBFBFB] bg-[#000914] border border-[#000914] hover:bg-[#013BA5] rounded-none transition-colors"
               >
                 Contact
               </Link>
