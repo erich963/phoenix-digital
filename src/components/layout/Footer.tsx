@@ -1,8 +1,9 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <footer className="bg-[#000914] text-[#FBFBFB]">
+    <footer className="bg-[#020f2a] text-[#FBFBFB]">
       <div
         className="py-16"
         style={{ paddingLeft: 'min(6.5rem, 8vw)', paddingRight: 'min(6.5rem, 8vw)' }}
@@ -10,11 +11,14 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-10">
           {/* Left — brand + tagline + location */}
           <div className="max-w-sm">
-            <Link
-              href="/"
-              className="text-[#FBFBFB] font-bold text-xl tracking-tight hover:text-white/80 transition-colors"
-            >
-              Phoenix Digital
+            <Link href="/" className="inline-flex items-center">
+              <Image
+                src="/logo.png"
+                alt="Phoenix Digital"
+                width={160}
+                height={29}
+                className="h-7 w-auto brightness-0 invert"
+              />
             </Link>
             <p className="mt-4 text-sm text-[#FBFBFB]/70 leading-relaxed">
               B2B lead generation systems built on Google Ads, fast websites, and practical strategy.

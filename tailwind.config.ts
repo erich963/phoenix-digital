@@ -13,9 +13,9 @@ const config: Config = {
       },
       colors: {
         navy: {
-          DEFAULT: '#000914',
-          hover: '#013BA5',
-          dark: '#04153a',
+          DEFAULT: '#020f2a',
+          hover: '#0a2d6e',
+          dark: '#010d1f',
         },
         orange: '#ff910a',
         offwhite: '#FBFBFB',

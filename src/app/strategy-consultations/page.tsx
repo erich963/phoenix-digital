@@ -63,7 +63,7 @@ export default function StrategyConsultationsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#000914] py-32 lg:py-40" style={sectionPad}>
+      <section className="bg-[#020f2a] py-32 lg:py-40" style={sectionPad}>
         <div className="max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-white/60 mb-4">Strategy Consultations</p>
           <h1
@@ -84,7 +84,7 @@ export default function StrategyConsultationsPage() {
       {/* Scope note */}
       <section className="bg-gray-50 border-b border-gray-200 py-12 lg:py-14" style={sectionPad}>
         <div className="max-w-2xl">
-          <p className="text-[#000914] font-medium leading-relaxed">
+          <p className="text-[#020f2a] font-medium leading-relaxed">
             These are advisory sessions — not open-ended execution retainers. Sessions are intentionally scoped to give you a clear answer, a sharper framework, or a practical next step. Implementation outside of Google Ads and web projects is not assumed.
           </p>
         </div>
@@ -94,7 +94,7 @@ export default function StrategyConsultationsPage() {
       <section className="bg-white py-20 lg:py-28 border-b border-gray-200" style={sectionPad}>
         <div className="mb-14">
           <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">Areas of Focus</p>
-          <h2 className="text-3xl font-semibold text-[#000914]">
+          <h2 className="text-3xl font-semibold text-[#020f2a]">
             Six categories of senior-level advisory
           </h2>
         </div>
@@ -105,8 +105,8 @@ export default function StrategyConsultationsPage() {
               className="bg-white border border-gray-200 p-7"
               style={{ boxShadow: '6px 6px 9px rgba(0,0,0,0.2)' }}
             >
-              <div className="w-8 h-1 bg-[#000914] mb-5" />
-              <h3 className="text-base font-semibold text-[#000914] mb-2">
+              <div className="w-8 h-1 bg-[#020f2a] mb-5" />
+              <h3 className="text-base font-semibold text-[#020f2a] mb-2">
                 {category.title}
               </h3>
               <p className="text-sm text-[#121010]/60 leading-relaxed">
@@ -122,7 +122,7 @@ export default function StrategyConsultationsPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">Who This Is For</p>
-            <h2 className="text-3xl font-semibold text-[#000914] mb-6">
+            <h2 className="text-3xl font-semibold text-[#020f2a] mb-6">
               Built for operators who need answers, not ambiguity
             </h2>
             <p className="text-[#121010]/70 leading-relaxed">
@@ -135,7 +135,7 @@ export default function StrategyConsultationsPage() {
                 key={item}
                 className="flex items-start gap-3 bg-white border border-gray-200 p-5"
               >
-                <CheckCircleIcon className="w-5 h-5 text-[#000914] flex-shrink-0 mt-0.5" />
+                <CheckCircleIcon className="w-5 h-5 text-[#020f2a] flex-shrink-0 mt-0.5" />
                 <span className="text-[#121010]/80 text-sm leading-relaxed">{item}</span>
               </div>
             ))}
@@ -147,7 +147,7 @@ export default function StrategyConsultationsPage() {
       <section className="bg-white py-20 lg:py-28 border-b border-gray-200" style={sectionPad}>
         <div className="mb-14">
           <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">Session Formats</p>
-          <h2 className="text-3xl font-semibold text-[#000914]">
+          <h2 className="text-3xl font-semibold text-[#020f2a]">
             Choose the format that fits your need
           </h2>
         </div>
@@ -158,8 +158,8 @@ export default function StrategyConsultationsPage() {
               className="bg-white border border-gray-200 p-8"
               style={{ boxShadow: '6px 6px 9px rgba(0,0,0,0.2)' }}
             >
-              <div className="w-8 h-1 bg-[#000914] mb-5" />
-              <h3 className="text-lg font-semibold text-[#000914] mb-3">
+              <div className="w-8 h-1 bg-[#020f2a] mb-5" />
+              <h3 className="text-lg font-semibold text-[#020f2a] mb-3">
                 {format.title}
               </h3>
               <p className="text-sm text-[#121010]/60 leading-relaxed">
@@ -174,7 +174,7 @@ export default function StrategyConsultationsPage() {
       <section className="bg-gray-50 border-b border-gray-200 py-20 lg:py-28" style={sectionPad}>
         <div className="mb-14">
           <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">FAQ</p>
-          <h2 className="text-3xl font-semibold text-[#000914]">
+          <h2 className="text-3xl font-semibold text-[#020f2a]">
             Common questions
           </h2>
         </div>
@@ -185,7 +185,7 @@ export default function StrategyConsultationsPage() {
               className="group bg-white border border-gray-200 overflow-hidden"
             >
               <summary className="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none">
-                <span className="text-base font-semibold text-[#000914]">{faq.question}</span>
+                <span className="text-base font-semibold text-[#020f2a]">{faq.question}</span>
                 <ChevronDownIcon className="w-5 h-5 text-[#121010]/30 flex-shrink-0 group-open:rotate-180 transition-transform" />
               </summary>
               <div className="px-6 pb-5 border-t border-gray-100">
@@ -197,7 +197,7 @@ export default function StrategyConsultationsPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#000914] py-20 lg:py-28" style={sectionPad}>
+      <section className="bg-[#020f2a] py-20 lg:py-28" style={sectionPad}>
         <div className="max-w-2xl mx-auto text-center">
           <h2
             className="text-[#FBFBFB] font-semibold mb-5"

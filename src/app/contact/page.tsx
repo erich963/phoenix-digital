@@ -22,7 +22,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#000914] py-24 lg:py-32" style={sectionPad}>
+      <section className="bg-[#020f2a] py-24 lg:py-32" style={sectionPad}>
         <div className="max-w-2xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-white/60 mb-4">Contact</p>
           <h1
@@ -45,13 +45,13 @@ export default function ContactPage() {
           <div className="lg:col-span-2 space-y-10">
             <div>
               <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">Good Fit Projects</p>
-              <h2 className="text-xl font-semibold text-[#000914] mb-5">
+              <h2 className="text-xl font-semibold text-[#020f2a] mb-5">
                 What kinds of projects we take on
               </h2>
               <div className="space-y-3">
                 {goodFitProjects.map((item) => (
                   <div key={item} className="flex items-start gap-3">
-                    <CheckCircleIcon className="w-5 h-5 text-[#000914] flex-shrink-0 mt-0.5" />
+                    <CheckCircleIcon className="w-5 h-5 text-[#020f2a] flex-shrink-0 mt-0.5" />
                     <span className="text-sm text-[#121010]/80 leading-relaxed">{item}</span>
                   </div>
                 ))}
@@ -60,7 +60,7 @@ export default function ContactPage() {
 
             <div>
               <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">What Happens Next</p>
-              <h2 className="text-xl font-semibold text-[#000914] mb-4">
+              <h2 className="text-xl font-semibold text-[#020f2a] mb-4">
                 After you submit
               </h2>
               <p className="text-sm text-[#121010]/70 leading-relaxed">
