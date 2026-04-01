@@ -170,18 +170,18 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#000914] py-20 lg:py-28" style={sectionPad}>
+      <section className="bg-white border-t-4 border-[#ff910a] py-20 lg:py-28" style={sectionPad}>
         <div className="max-w-2xl mx-auto text-center">
           <h2
-            className="text-[#FBFBFB] font-semibold mb-5"
+            className="text-[#000914] font-semibold mb-5"
             style={{ fontSize: 'clamp(1.563rem, calc(1.563rem + ((1vw - 0.2rem) * 2.072)), 2.625rem)' }}
           >
             Ready to work with a team that values clarity over complexity?
           </h2>
-          <p className="text-[#FBFBFB]/70 leading-relaxed mb-10 max-w-xl mx-auto">
+          <p className="text-[#121010]/70 leading-relaxed mb-10 max-w-xl mx-auto">
             Let&apos;s talk about your goals, your current setup, and where focused, senior-level work can make the biggest difference.
           </p>
-          <Button href="/contact" size="lg" variant="outline">
+          <Button href="/contact" size="lg" variant="primary">
             Book a Consultation
           </Button>
         </div>

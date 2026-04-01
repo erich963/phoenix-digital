@@ -197,18 +197,18 @@ export default function StrategyConsultationsPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#000914] py-20 lg:py-28" style={sectionPad}>
+      <section className="bg-white border-t-4 border-[#ff910a] py-20 lg:py-28" style={sectionPad}>
         <div className="max-w-2xl mx-auto text-center">
           <h2
-            className="text-[#FBFBFB] font-semibold mb-5"
+            className="text-[#000914] font-semibold mb-5"
             style={{ fontSize: 'clamp(1.563rem, calc(1.563rem + ((1vw - 0.2rem) * 2.072)), 2.625rem)' }}
           >
             Have a specific problem to work through?
           </h2>
-          <p className="text-[#FBFBFB]/70 leading-relaxed mb-10 max-w-xl mx-auto">
+          <p className="text-[#121010]/70 leading-relaxed mb-10 max-w-xl mx-auto">
             Book a strategy session and bring your question. We&apos;ll give you a clear perspective, a practical framework, and a concrete next step.
           </p>
-          <Button href="/contact" size="lg" variant="outline">
+          <Button href="/contact" size="lg" variant="primary">
             Book a Consultation
           </Button>
         </div>

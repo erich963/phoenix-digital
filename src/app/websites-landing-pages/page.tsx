@@ -212,18 +212,18 @@ export default function WebsitesPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#000914] py-20 lg:py-28" style={sectionPad}>
+      <section className="bg-white border-t-4 border-[#ff910a] py-20 lg:py-28" style={sectionPad}>
         <div className="max-w-2xl mx-auto text-center">
           <h2
-            className="text-[#FBFBFB] font-semibold mb-5"
+            className="text-[#000914] font-semibold mb-5"
             style={{ fontSize: 'clamp(1.563rem, calc(1.563rem + ((1vw - 0.2rem) * 2.072)), 2.625rem)' }}
           >
             Ready to build a site that converts?
           </h2>
-          <p className="text-[#FBFBFB]/70 leading-relaxed mb-10 max-w-xl mx-auto">
+          <p className="text-[#121010]/70 leading-relaxed mb-10 max-w-xl mx-auto">
             Whether you need a single landing page or a full B2B website, let&apos;s talk about your goals and what the right project looks like.
           </p>
-          <Button href="/contact" size="lg" variant="outline">
+          <Button href="/contact" size="lg" variant="primary">
             Book a Consultation
           </Button>
         </div>
