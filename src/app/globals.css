@@ -8,7 +8,7 @@
   }
   body {
     font-family: 'Barlow', sans-serif;
-    color: #121010;
+    color: #2d2d2d;
     background: #fff;
     font-size: 1rem;
     line-height: 1.6;
@@ -16,20 +16,20 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Barlow', sans-serif;
     font-weight: 600;
-    color: #000914;
+    color: #0a0a0a;
     line-height: 1.2;
   }
   a {
-    color: #000914;
+    color: #0a0a0a;
   }
   a:hover {
-    color: #013BA5;
+    color: #2a2a2a;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center px-5 py-2.5 bg-navy text-offwhite font-semibold uppercase tracking-wider text-sm border border-navy rounded-none transition-colors hover:bg-navy-hover;
+    @apply inline-flex items-center justify-center px-5 py-2.5 bg-brand text-offwhite font-semibold uppercase tracking-wider text-sm border border-brand rounded-none transition-colors hover:bg-brand-hover;
   }
   .section-pad {
     padding-left: min(6.5rem, 8vw);

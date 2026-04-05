@@ -8,9 +8,9 @@ import {
 } from '@heroicons/react/24/solid'
 
 export const metadata: Metadata = {
-  title: 'Google Ads Management for B2B Lead Generation | Phoenix Digital',
+  title: 'Paid Search Lead Generation (Google Ads) | Phoenix Digital',
   description:
-    'Senior-level Google Ads management for B2B companies. Clean account architecture, intent-based targeting, and reporting tied to pipeline value.',
+    'B2B paid search lead generation powered by Google Ads. Clean account architecture, intent-based targeting, conversion tracking, and landing pages that convert.',
 }
 
 const sectionPad = { paddingLeft: 'min(6.5rem, 8vw)', paddingRight: 'min(6.5rem, 8vw)' }
@@ -54,17 +54,17 @@ export default function GoogleAdsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#000914] py-32 lg:py-40" style={sectionPad}>
+      <section className="bg-[#0a0a0a] py-32 lg:py-40" style={sectionPad}>
         <div className="max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-widest text-white/60 mb-4">Google Ads Management</p>
+          <p className="text-xs font-semibold uppercase tracking-widest text-white/60 mb-4">Paid Search Lead Generation</p>
           <h1
-            className="text-[#FBFBFB] font-semibold leading-[1.15] mb-6"
+            className="text-[#f5f5f5] font-semibold leading-[1.15] mb-6"
             style={{ fontSize: 'clamp(1.8rem, calc(1.8rem + ((1vw - 0.2rem) * 2.829)), 3.25rem)' }}
           >
-            Turn Google Ads into a predictable source of qualified B2B leads.
+            Google Ads built for B2B pipeline, not vanity metrics.
           </h1>
-          <p className="text-[1.05rem] text-[#FBFBFB]/80 leading-relaxed mb-10 max-w-2xl">
-            Disciplined paid search management built around lead quality, economics, and pipeline value — not vanity metrics.
+          <p className="text-[1.05rem] text-[#f5f5f5]/80 leading-relaxed mb-10 max-w-2xl">
+            End-to-end Google Ads management — from campaign architecture and keyword strategy to conversion tracking and landing pages. Built to generate qualified leads, not just clicks.
           </p>
           <Button href="/contact" size="lg" variant="outline">
             Book a Consultation
@@ -76,11 +76,11 @@ export default function GoogleAdsPage() {
       <section className="bg-gray-50 border-b border-gray-200 py-20 lg:py-28" style={sectionPad}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">Who This Is For</p>
-            <h2 className="text-3xl font-semibold text-[#000914] mb-6">
-              Built for B2B businesses with real lead value
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#2d2d2d]/50 mb-4">Who This Is For</p>
+            <h2 className="text-3xl font-semibold text-[#0a0a0a] mb-6">
+              Built for B2B businesses where leads have real value
             </h2>
-            <p className="text-[#121010]/70 leading-relaxed">
+            <p className="text-[#2d2d2d]/70 leading-relaxed">
               Google Ads management from Phoenix Digital is built for B2B companies in one of three situations:
             </p>
           </div>
@@ -95,8 +95,8 @@ export default function GoogleAdsPage() {
                 className="flex items-start gap-3 bg-white border border-gray-200 p-5"
                 style={{ boxShadow: '6px 6px 9px rgba(0,0,0,0.2)' }}
               >
-                <CheckCircleIcon className="w-5 h-5 text-[#000914] flex-shrink-0 mt-0.5" />
-                <span className="text-[#121010]/80 text-sm leading-relaxed">{item}</span>
+                <CheckCircleIcon className="w-5 h-5 text-[#0a0a0a] flex-shrink-0 mt-0.5" />
+                <span className="text-[#2d2d2d]/80 text-sm leading-relaxed">{item}</span>
               </div>
             ))}
           </div>
@@ -106,8 +106,8 @@ export default function GoogleAdsPage() {
       {/* Common Problems */}
       <section className="bg-white py-20 lg:py-28 border-b border-gray-200" style={sectionPad}>
         <div className="mb-14">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">Common Problems We Solve</p>
-          <h2 className="text-3xl font-semibold text-[#000914] max-w-lg">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#2d2d2d]/50 mb-4">Common Problems We Solve</p>
+          <h2 className="text-3xl font-semibold text-[#0a0a0a] max-w-lg">
             Why most B2B Google Ads accounts underperform
           </h2>
         </div>
@@ -119,10 +119,10 @@ export default function GoogleAdsPage() {
               style={{ boxShadow: '6px 6px 9px rgba(0,0,0,0.2)' }}
             >
               <div className="flex items-start gap-3 mb-2">
-                <XCircleIcon className="w-5 h-5 text-[#121010]/30 flex-shrink-0 mt-0.5" />
-                <h3 className="text-base font-semibold text-[#000914]">{problem.label}</h3>
+                <XCircleIcon className="w-5 h-5 text-[#2d2d2d]/30 flex-shrink-0 mt-0.5" />
+                <h3 className="text-base font-semibold text-[#0a0a0a]">{problem.label}</h3>
               </div>
-              <p className="text-sm text-[#121010]/60 leading-relaxed pl-8">{problem.description}</p>
+              <p className="text-sm text-[#2d2d2d]/60 leading-relaxed pl-8">{problem.description}</p>
             </div>
           ))}
         </div>
@@ -132,19 +132,19 @@ export default function GoogleAdsPage() {
       <section className="bg-gray-50 border-b border-gray-200 py-20 lg:py-28" style={sectionPad}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">What&apos;s Included</p>
-            <h2 className="text-3xl font-semibold text-[#000914] mb-6">
-              Full-service management, clearly scoped
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#2d2d2d]/50 mb-4">What&apos;s Included</p>
+            <h2 className="text-3xl font-semibold text-[#0a0a0a] mb-6">
+              Everything needed to run a real paid search program
             </h2>
-            <p className="text-[#121010]/70 leading-relaxed">
+            <p className="text-[#2d2d2d]/70 leading-relaxed">
               Every Google Ads engagement covers the full stack — from initial strategy to ongoing optimization. Nothing is left to chance or handed off to a junior team member.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {included.map((item) => (
               <div key={item} className="flex items-start gap-2.5 bg-white border border-gray-200 px-4 py-3">
-                <CheckCircleIcon className="w-4 h-4 text-[#000914] flex-shrink-0 mt-0.5" />
-                <span className="text-sm text-[#121010]/80">{item}</span>
+                <CheckCircleIcon className="w-4 h-4 text-[#0a0a0a] flex-shrink-0 mt-0.5" />
+                <span className="text-sm text-[#2d2d2d]/80">{item}</span>
               </div>
             ))}
           </div>
@@ -154,9 +154,9 @@ export default function GoogleAdsPage() {
       {/* The Approach */}
       <section className="bg-white py-20 lg:py-28 border-b border-gray-200" style={sectionPad}>
         <div className="max-w-2xl mb-12">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">The Phoenix Digital Approach</p>
-          <h2 className="text-3xl font-semibold text-[#000914]">
-            Designed around pipeline, not clicks
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#2d2d2d]/50 mb-4">How we work</p>
+          <h2 className="text-3xl font-semibold text-[#0a0a0a]">
+            Built around lead quality, not click volume
           </h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -167,9 +167,9 @@ export default function GoogleAdsPage() {
             { title: 'Reporting Tied to Pipeline', desc: 'Performance tracked against what matters: leads, lead quality, and pipeline value.' },
           ].map((item) => (
             <div key={item.title} className="bg-white border border-gray-200 p-6" style={{ boxShadow: '6px 6px 9px rgba(0,0,0,0.2)' }}>
-              <div className="w-6 h-1 bg-[#000914] mb-4" />
-              <h3 className="text-base font-semibold text-[#000914] mb-2">{item.title}</h3>
-              <p className="text-sm text-[#121010]/60 leading-relaxed">{item.desc}</p>
+              <div className="w-6 h-1 bg-[#0a0a0a] mb-4" />
+              <h3 className="text-base font-semibold text-[#0a0a0a] mb-2">{item.title}</h3>
+              <p className="text-sm text-[#2d2d2d]/60 leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -179,10 +179,10 @@ export default function GoogleAdsPage() {
       <section className="bg-gray-50 border-y border-gray-200 py-14 lg:py-16" style={sectionPad}>
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div className="max-w-xl">
-            <h2 className="text-2xl font-semibold text-[#000914] mb-3">
+            <h2 className="text-2xl font-semibold text-[#0a0a0a] mb-3">
               Why landing pages matter
             </h2>
-            <p className="text-[#121010]/70 leading-relaxed text-sm">
+            <p className="text-[#2d2d2d]/70 leading-relaxed text-sm">
               A great Google Ads campaign can be undermined by a weak landing page. Phoenix Digital can build and optimize the landing pages that support your paid search performance — with conversion-focused structure, strong CTAs, and tracking built in from day one.
             </p>
           </div>
@@ -195,8 +195,8 @@ export default function GoogleAdsPage() {
       {/* Engagement Options */}
       <section className="bg-white py-20 lg:py-28 border-b border-gray-200" style={sectionPad}>
         <div className="mb-14">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">Engagement Options</p>
-          <h2 className="text-3xl font-semibold text-[#000914]">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#2d2d2d]/50 mb-4">Engagement Options</p>
+          <h2 className="text-3xl font-semibold text-[#0a0a0a]">
             How we can work together
           </h2>
         </div>
@@ -207,9 +207,9 @@ export default function GoogleAdsPage() {
               className="bg-white border border-gray-200 p-8"
               style={{ boxShadow: '6px 6px 9px rgba(0,0,0,0.2)' }}
             >
-              <div className="w-8 h-1 bg-[#000914] mb-5" />
-              <h3 className="text-lg font-semibold text-[#000914] mb-3">{option.title}</h3>
-              <p className="text-sm text-[#121010]/60 leading-relaxed">{option.description}</p>
+              <div className="w-8 h-1 bg-[#0a0a0a] mb-5" />
+              <h3 className="text-lg font-semibold text-[#0a0a0a] mb-3">{option.title}</h3>
+              <p className="text-sm text-[#2d2d2d]/60 leading-relaxed">{option.description}</p>
             </div>
           ))}
         </div>
@@ -218,8 +218,8 @@ export default function GoogleAdsPage() {
       {/* FAQ */}
       <section className="bg-gray-50 border-b border-gray-200 py-20 lg:py-28" style={sectionPad}>
         <div className="mb-14">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">FAQ</p>
-          <h2 className="text-3xl font-semibold text-[#000914]">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#2d2d2d]/50 mb-4">FAQ</p>
+          <h2 className="text-3xl font-semibold text-[#0a0a0a]">
             Common questions
           </h2>
         </div>
@@ -230,11 +230,11 @@ export default function GoogleAdsPage() {
               className="group bg-white border border-gray-200 overflow-hidden"
             >
               <summary className="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none">
-                <span className="text-base font-semibold text-[#000914]">{faq.question}</span>
-                <ChevronDownIcon className="w-5 h-5 text-[#121010]/30 flex-shrink-0 group-open:rotate-180 transition-transform" />
+                <span className="text-base font-semibold text-[#0a0a0a]">{faq.question}</span>
+                <ChevronDownIcon className="w-5 h-5 text-[#2d2d2d]/30 flex-shrink-0 group-open:rotate-180 transition-transform" />
               </summary>
               <div className="px-6 pb-5 border-t border-gray-100">
-                <p className="text-sm text-[#121010]/70 leading-relaxed pt-4">{faq.answer}</p>
+                <p className="text-sm text-[#2d2d2d]/70 leading-relaxed pt-4">{faq.answer}</p>
               </div>
             </details>
           ))}
@@ -242,15 +242,15 @@ export default function GoogleAdsPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-white border-t-4 border-[#ff910a] py-20 lg:py-28" style={sectionPad}>
+      <section className="bg-white border-t border-[#e5e5e5] py-20 lg:py-28" style={sectionPad}>
         <div className="max-w-2xl mx-auto text-center">
           <h2
-            className="text-[#000914] font-semibold mb-5"
+            className="text-[#0a0a0a] font-semibold mb-5"
             style={{ fontSize: 'clamp(1.563rem, calc(1.563rem + ((1vw - 0.2rem) * 2.072)), 2.625rem)' }}
           >
             Get a clearer view of what your Google Ads account should be doing.
           </h2>
-          <p className="text-[#121010]/70 leading-relaxed mb-10 max-w-xl mx-auto">
+          <p className="text-[#2d2d2d]/70 leading-relaxed mb-10 max-w-xl mx-auto">
             Book a consultation and we&apos;ll take a direct look at your current setup, your goals, and where paid search can make the biggest difference.
           </p>
           <Button href="/contact" size="lg" variant="primary">

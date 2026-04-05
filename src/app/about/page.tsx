@@ -47,16 +47,16 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#000914] py-32 lg:py-40" style={sectionPad}>
+      <section className="bg-[#0a0a0a] py-32 lg:py-40" style={sectionPad}>
         <div className="max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-white/60 mb-4">About Phoenix Digital</p>
           <h1
-            className="text-[#FBFBFB] font-semibold leading-[1.15] mb-6"
+            className="text-[#f5f5f5] font-semibold leading-[1.15] mb-6"
             style={{ fontSize: 'clamp(1.8rem, calc(1.8rem + ((1vw - 0.2rem) * 2.829)), 3.25rem)' }}
           >
             Built for clarity. Focused on outcomes.
           </h1>
-          <p className="text-[1.05rem] text-[#FBFBFB]/80 leading-relaxed max-w-2xl">
+          <p className="text-[1.05rem] text-[#f5f5f5]/80 leading-relaxed max-w-2xl">
             Phoenix Digital exists because the old agency model stopped working for most B2B businesses. Too many agencies are built around complexity — large teams, opaque retainers, and broad deliverables that are hard to measure. We were built as a direct response to that.
           </p>
         </div>
@@ -66,11 +66,11 @@ export default function AboutPage() {
       <section className="bg-gray-50 border-b border-gray-200 py-20 lg:py-28" style={sectionPad}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">Our Story</p>
-            <h2 className="text-3xl font-semibold text-[#000914] mb-6">
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#2d2d2d]/50 mb-4">Our Story</p>
+            <h2 className="text-3xl font-semibold text-[#0a0a0a] mb-6">
               A direct response to a broken model
             </h2>
-            <div className="space-y-4 text-[#121010]/70 leading-relaxed">
+            <div className="space-y-4 text-[#2d2d2d]/70 leading-relaxed">
               <p>
                 The traditional agency model was built for a different era — one that required large teams to produce work that can now be executed by a focused, senior-led operation with the right tools and process.
               </p>
@@ -83,11 +83,11 @@ export default function AboutPage() {
             </div>
           </div>
           <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">The Model</p>
-            <h2 className="text-3xl font-semibold text-[#000914] mb-6">
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#2d2d2d]/50 mb-4">The Model</p>
+            <h2 className="text-3xl font-semibold text-[#0a0a0a] mb-6">
               Lean, expert-led, AI-enabled
             </h2>
-            <div className="space-y-4 text-[#121010]/70 leading-relaxed">
+            <div className="space-y-4 text-[#2d2d2d]/70 leading-relaxed">
               <p>
                 Modern tools and AI workflows now allow high-quality execution — strategy, campaign management, web builds, tracking, and analytics — to be delivered by a lean, expert-led operation at a fraction of traditional agency overhead.
               </p>
@@ -105,8 +105,8 @@ export default function AboutPage() {
       {/* Principles */}
       <section className="bg-white py-20 lg:py-28 border-b border-gray-200" style={sectionPad}>
         <div className="mb-14">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">How We Work</p>
-          <h2 className="text-3xl font-semibold text-[#000914]">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#2d2d2d]/50 mb-4">How We Work</p>
+          <h2 className="text-3xl font-semibold text-[#0a0a0a]">
             The principles behind every engagement
           </h2>
         </div>
@@ -117,11 +117,11 @@ export default function AboutPage() {
               className="bg-white border border-gray-200 p-7"
               style={{ boxShadow: '6px 6px 9px rgba(0,0,0,0.2)' }}
             >
-              <div className="w-8 h-1 bg-[#000914] mb-5" />
-              <h3 className="text-base font-semibold text-[#000914] mb-2">
+              <div className="w-8 h-1 bg-[#0a0a0a] mb-5" />
+              <h3 className="text-base font-semibold text-[#0a0a0a] mb-2">
                 {principle.title}
               </h3>
-              <p className="text-sm text-[#121010]/60 leading-relaxed">
+              <p className="text-sm text-[#2d2d2d]/60 leading-relaxed">
                 {principle.description}
               </p>
             </div>
@@ -133,11 +133,11 @@ export default function AboutPage() {
       <section className="bg-gray-50 border-b border-gray-200 py-20 lg:py-28" style={sectionPad}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">The Founder</p>
-            <h2 className="text-3xl font-semibold text-[#000914] mb-6">
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#2d2d2d]/50 mb-4">The Founder</p>
+            <h2 className="text-3xl font-semibold text-[#0a0a0a] mb-6">
               Eric H. — Portland, Maine
             </h2>
-            <div className="space-y-4 text-[#121010]/70 leading-relaxed">
+            <div className="space-y-4 text-[#2d2d2d]/70 leading-relaxed">
               <p>
                 Phoenix Digital is led by a hands-on practitioner with deep experience across the full B2B lead generation stack — from paid search and landing page optimization to conversion tracking, CRM alignment, RevOps, and practical AI strategy.
               </p>
@@ -150,8 +150,8 @@ export default function AboutPage() {
             </div>
           </div>
           <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">Areas of Expertise</p>
-            <h2 className="text-3xl font-semibold text-[#000914] mb-6">
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#2d2d2d]/50 mb-4">Areas of Expertise</p>
+            <h2 className="text-3xl font-semibold text-[#0a0a0a] mb-6">
               Deep across the B2B growth stack
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -160,8 +160,8 @@ export default function AboutPage() {
                   key={item}
                   className="flex items-center gap-2.5 bg-white border border-gray-200 px-4 py-3"
                 >
-                  <div className="w-1.5 h-1.5 rounded-full bg-[#000914] flex-shrink-0" />
-                  <span className="text-sm text-[#121010]/80">{item}</span>
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#0a0a0a] flex-shrink-0" />
+                  <span className="text-sm text-[#2d2d2d]/80">{item}</span>
                 </div>
               ))}
             </div>
@@ -170,15 +170,15 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-white border-t-4 border-[#ff910a] py-20 lg:py-28" style={sectionPad}>
+      <section className="bg-white border-t border-[#e5e5e5] py-20 lg:py-28" style={sectionPad}>
         <div className="max-w-2xl mx-auto text-center">
           <h2
-            className="text-[#000914] font-semibold mb-5"
+            className="text-[#0a0a0a] font-semibold mb-5"
             style={{ fontSize: 'clamp(1.563rem, calc(1.563rem + ((1vw - 0.2rem) * 2.072)), 2.625rem)' }}
           >
             Ready to work with a team that values clarity over complexity?
           </h2>
-          <p className="text-[#121010]/70 leading-relaxed mb-10 max-w-xl mx-auto">
+          <p className="text-[#2d2d2d]/70 leading-relaxed mb-10 max-w-xl mx-auto">
             Let&apos;s talk about your goals, your current setup, and where focused, senior-level work can make the biggest difference.
           </p>
           <Button href="/contact" size="lg" variant="primary">

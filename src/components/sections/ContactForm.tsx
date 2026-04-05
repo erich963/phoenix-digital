@@ -48,7 +48,7 @@ export default function ContactForm() {
   if (submitted) {
     return (
       <div className="bg-gray-50 border border-gray-200 rounded-lg p-10 text-center">
-        <div className="w-12 h-12 bg-[#ff910a] rounded-none flex items-center justify-center mx-auto mb-4">
+        <div className="w-12 h-12 bg-[#0a0a0a] rounded-none flex items-center justify-center mx-auto mb-4">
           <svg
             className="w-6 h-6 text-white"
             fill="none"
@@ -71,7 +71,7 @@ export default function ContactForm() {
         </p>
         <button
           onClick={() => setSubmitted(false)}
-          className="mt-6 text-sm text-[#000914] font-medium hover:underline"
+          className="mt-6 text-sm text-[#0a0a0a] font-medium hover:underline"
         >
           Send another message
         </button>
@@ -87,7 +87,7 @@ export default function ContactForm() {
             htmlFor="firstName"
             className="block text-sm font-medium text-slate-700 mb-1.5"
           >
-            First Name <span className="text-[#000914]">*</span>
+            First Name <span className="text-[#0a0a0a]">*</span>
           </label>
           <input
             id="firstName"
@@ -96,7 +96,7 @@ export default function ContactForm() {
             required
             value={formData.firstName}
             onChange={handleChange}
-            className="w-full px-4 py-3 text-sm text-slate-900 bg-white border border-slate-200 rounded-none focus:outline-none focus:ring-2 focus:ring-[#000914] focus:border-transparent transition placeholder:text-slate-400"
+            className="w-full px-4 py-3 text-sm text-slate-900 bg-white border border-slate-200 rounded-none focus:outline-none focus:ring-2 focus:ring-[#0a0a0a] focus:border-transparent transition placeholder:text-slate-400"
             placeholder="First name"
           />
         </div>
@@ -105,7 +105,7 @@ export default function ContactForm() {
             htmlFor="lastName"
             className="block text-sm font-medium text-slate-700 mb-1.5"
           >
-            Last Name <span className="text-[#000914]">*</span>
+            Last Name <span className="text-[#0a0a0a]">*</span>
           </label>
           <input
             id="lastName"
@@ -114,7 +114,7 @@ export default function ContactForm() {
             required
             value={formData.lastName}
             onChange={handleChange}
-            className="w-full px-4 py-3 text-sm text-slate-900 bg-white border border-slate-200 rounded-none focus:outline-none focus:ring-2 focus:ring-[#000914] focus:border-transparent transition placeholder:text-slate-400"
+            className="w-full px-4 py-3 text-sm text-slate-900 bg-white border border-slate-200 rounded-none focus:outline-none focus:ring-2 focus:ring-[#0a0a0a] focus:border-transparent transition placeholder:text-slate-400"
             placeholder="Last name"
           />
         </div>
@@ -133,7 +133,7 @@ export default function ContactForm() {
           type="text"
           value={formData.company}
           onChange={handleChange}
-          className="w-full px-4 py-3 text-sm text-slate-900 bg-white border border-slate-200 rounded-none focus:outline-none focus:ring-2 focus:ring-[#000914] focus:border-transparent transition placeholder:text-slate-400"
+          className="w-full px-4 py-3 text-sm text-slate-900 bg-white border border-slate-200 rounded-none focus:outline-none focus:ring-2 focus:ring-[#0a0a0a] focus:border-transparent transition placeholder:text-slate-400"
           placeholder="Your company"
         />
       </div>
@@ -143,7 +143,7 @@ export default function ContactForm() {
           htmlFor="email"
           className="block text-sm font-medium text-slate-700 mb-1.5"
         >
-          Email Address <span className="text-[#000914]">*</span>
+          Email Address <span className="text-[#0a0a0a]">*</span>
         </label>
         <input
           id="email"
@@ -152,7 +152,7 @@ export default function ContactForm() {
           required
           value={formData.email}
           onChange={handleChange}
-          className="w-full px-4 py-3 text-sm text-slate-900 bg-white border border-slate-200 rounded-none focus:outline-none focus:ring-2 focus:ring-[#000914] focus:border-transparent transition placeholder:text-slate-400"
+          className="w-full px-4 py-3 text-sm text-slate-900 bg-white border border-slate-200 rounded-none focus:outline-none focus:ring-2 focus:ring-[#0a0a0a] focus:border-transparent transition placeholder:text-slate-400"
           placeholder="you@company.com"
         />
       </div>
@@ -162,7 +162,7 @@ export default function ContactForm() {
           htmlFor="message"
           className="block text-sm font-medium text-slate-700 mb-1.5"
         >
-          Message <span className="text-[#000914]">*</span>
+          Message <span className="text-[#0a0a0a]">*</span>
         </label>
         <textarea
           id="message"
@@ -171,7 +171,7 @@ export default function ContactForm() {
           rows={5}
           value={formData.message}
           onChange={handleChange}
-          className="w-full px-4 py-3 text-sm text-slate-900 bg-white border border-slate-200 rounded-none focus:outline-none focus:ring-2 focus:ring-[#000914] focus:border-transparent transition placeholder:text-slate-400 resize-none"
+          className="w-full px-4 py-3 text-sm text-slate-900 bg-white border border-slate-200 rounded-none focus:outline-none focus:ring-2 focus:ring-[#0a0a0a] focus:border-transparent transition placeholder:text-slate-400 resize-none"
           placeholder="Tell us about your business, your goals, and what you're working on..."
         />
       </div>
@@ -179,7 +179,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={loading}
-        className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold uppercase tracking-wide text-white bg-[#000914] hover:bg-[#04153a] disabled:opacity-60 disabled:cursor-not-allowed rounded-none transition-colors"
+        className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold uppercase tracking-wide text-white bg-[#0a0a0a] hover:bg-[#2a2a2a] disabled:opacity-60 disabled:cursor-not-allowed rounded-none transition-colors"
       >
         {loading ? (
           <>

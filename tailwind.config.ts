@@ -12,13 +12,12 @@ const config: Config = {
         sans: ['Barlow', 'sans-serif'],
       },
       colors: {
-        navy: {
-          DEFAULT: '#000914',
-          hover: '#013BA5',
-          dark: '#04153a',
+        brand: {
+          DEFAULT: '#0a0a0a',
+          hover: '#2a2a2a',
         },
-        orange: '#ff910a',
-        offwhite: '#FBFBFB',
+        offwhite: '#f5f5f5',
+        muted: '#6b7280',
       },
       fontSize: {
         'display': ['clamp(1.8rem, calc(1.8rem + ((1vw - 0.2rem) * 2.829)), 3.25rem)', { lineHeight: '1.15', fontWeight: '600' }],

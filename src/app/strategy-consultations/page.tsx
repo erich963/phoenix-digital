@@ -63,16 +63,16 @@ export default function StrategyConsultationsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#000914] py-32 lg:py-40" style={sectionPad}>
+      <section className="bg-[#0a0a0a] py-32 lg:py-40" style={sectionPad}>
         <div className="max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-white/60 mb-4">Strategy Consultations</p>
           <h1
-            className="text-[#FBFBFB] font-semibold leading-[1.15] mb-6"
+            className="text-[#f5f5f5] font-semibold leading-[1.15] mb-6"
             style={{ fontSize: 'clamp(1.8rem, calc(1.8rem + ((1vw - 0.2rem) * 2.829)), 3.25rem)' }}
           >
             Senior-level strategy sessions for growth, tracking, GTM, CRM, and AI-enabled operations.
           </h1>
-          <p className="text-[1.05rem] text-[#FBFBFB]/80 leading-relaxed mb-10 max-w-2xl">
+          <p className="text-[1.05rem] text-[#f5f5f5]/80 leading-relaxed mb-10 max-w-2xl">
             Strategy consultations are designed for businesses that need experienced guidance, sharper decision-making, or targeted troubleshooting — without committing to broad implementation work.
           </p>
           <Button href="/contact" size="lg" variant="outline">
@@ -84,7 +84,7 @@ export default function StrategyConsultationsPage() {
       {/* Scope note */}
       <section className="bg-gray-50 border-b border-gray-200 py-12 lg:py-14" style={sectionPad}>
         <div className="max-w-2xl">
-          <p className="text-[#000914] font-medium leading-relaxed">
+          <p className="text-[#0a0a0a] font-medium leading-relaxed">
             These are advisory sessions — not open-ended execution retainers. Sessions are intentionally scoped to give you a clear answer, a sharper framework, or a practical next step. Implementation outside of Google Ads and web projects is not assumed.
           </p>
         </div>
@@ -93,8 +93,8 @@ export default function StrategyConsultationsPage() {
       {/* Six Categories */}
       <section className="bg-white py-20 lg:py-28 border-b border-gray-200" style={sectionPad}>
         <div className="mb-14">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">Areas of Focus</p>
-          <h2 className="text-3xl font-semibold text-[#000914]">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#2d2d2d]/50 mb-4">Areas of Focus</p>
+          <h2 className="text-3xl font-semibold text-[#0a0a0a]">
             Six categories of senior-level advisory
           </h2>
         </div>
@@ -105,11 +105,11 @@ export default function StrategyConsultationsPage() {
               className="bg-white border border-gray-200 p-7"
               style={{ boxShadow: '6px 6px 9px rgba(0,0,0,0.2)' }}
             >
-              <div className="w-8 h-1 bg-[#000914] mb-5" />
-              <h3 className="text-base font-semibold text-[#000914] mb-2">
+              <div className="w-8 h-1 bg-[#0a0a0a] mb-5" />
+              <h3 className="text-base font-semibold text-[#0a0a0a] mb-2">
                 {category.title}
               </h3>
-              <p className="text-sm text-[#121010]/60 leading-relaxed">
+              <p className="text-sm text-[#2d2d2d]/60 leading-relaxed">
                 {category.description}
               </p>
             </div>
@@ -121,11 +121,11 @@ export default function StrategyConsultationsPage() {
       <section className="bg-gray-50 border-b border-gray-200 py-20 lg:py-28" style={sectionPad}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">Who This Is For</p>
-            <h2 className="text-3xl font-semibold text-[#000914] mb-6">
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#2d2d2d]/50 mb-4">Who This Is For</p>
+            <h2 className="text-3xl font-semibold text-[#0a0a0a] mb-6">
               Built for operators who need answers, not ambiguity
             </h2>
-            <p className="text-[#121010]/70 leading-relaxed">
+            <p className="text-[#2d2d2d]/70 leading-relaxed">
               Strategy sessions are best suited for decision-makers who have a specific problem to solve and want experienced guidance without a long ramp-up.
             </p>
           </div>
@@ -135,8 +135,8 @@ export default function StrategyConsultationsPage() {
                 key={item}
                 className="flex items-start gap-3 bg-white border border-gray-200 p-5"
               >
-                <CheckCircleIcon className="w-5 h-5 text-[#000914] flex-shrink-0 mt-0.5" />
-                <span className="text-[#121010]/80 text-sm leading-relaxed">{item}</span>
+                <CheckCircleIcon className="w-5 h-5 text-[#0a0a0a] flex-shrink-0 mt-0.5" />
+                <span className="text-[#2d2d2d]/80 text-sm leading-relaxed">{item}</span>
               </div>
             ))}
           </div>
@@ -146,8 +146,8 @@ export default function StrategyConsultationsPage() {
       {/* Session Formats */}
       <section className="bg-white py-20 lg:py-28 border-b border-gray-200" style={sectionPad}>
         <div className="mb-14">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">Session Formats</p>
-          <h2 className="text-3xl font-semibold text-[#000914]">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#2d2d2d]/50 mb-4">Session Formats</p>
+          <h2 className="text-3xl font-semibold text-[#0a0a0a]">
             Choose the format that fits your need
           </h2>
         </div>
@@ -158,11 +158,11 @@ export default function StrategyConsultationsPage() {
               className="bg-white border border-gray-200 p-8"
               style={{ boxShadow: '6px 6px 9px rgba(0,0,0,0.2)' }}
             >
-              <div className="w-8 h-1 bg-[#000914] mb-5" />
-              <h3 className="text-lg font-semibold text-[#000914] mb-3">
+              <div className="w-8 h-1 bg-[#0a0a0a] mb-5" />
+              <h3 className="text-lg font-semibold text-[#0a0a0a] mb-3">
                 {format.title}
               </h3>
-              <p className="text-sm text-[#121010]/60 leading-relaxed">
+              <p className="text-sm text-[#2d2d2d]/60 leading-relaxed">
                 {format.description}
               </p>
             </div>
@@ -173,8 +173,8 @@ export default function StrategyConsultationsPage() {
       {/* FAQ */}
       <section className="bg-gray-50 border-b border-gray-200 py-20 lg:py-28" style={sectionPad}>
         <div className="mb-14">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">FAQ</p>
-          <h2 className="text-3xl font-semibold text-[#000914]">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#2d2d2d]/50 mb-4">FAQ</p>
+          <h2 className="text-3xl font-semibold text-[#0a0a0a]">
             Common questions
           </h2>
         </div>
@@ -185,11 +185,11 @@ export default function StrategyConsultationsPage() {
               className="group bg-white border border-gray-200 overflow-hidden"
             >
               <summary className="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none">
-                <span className="text-base font-semibold text-[#000914]">{faq.question}</span>
-                <ChevronDownIcon className="w-5 h-5 text-[#121010]/30 flex-shrink-0 group-open:rotate-180 transition-transform" />
+                <span className="text-base font-semibold text-[#0a0a0a]">{faq.question}</span>
+                <ChevronDownIcon className="w-5 h-5 text-[#2d2d2d]/30 flex-shrink-0 group-open:rotate-180 transition-transform" />
               </summary>
               <div className="px-6 pb-5 border-t border-gray-100">
-                <p className="text-sm text-[#121010]/70 leading-relaxed pt-4">{faq.answer}</p>
+                <p className="text-sm text-[#2d2d2d]/70 leading-relaxed pt-4">{faq.answer}</p>
               </div>
             </details>
           ))}
@@ -197,15 +197,15 @@ export default function StrategyConsultationsPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-white border-t-4 border-[#ff910a] py-20 lg:py-28" style={sectionPad}>
+      <section className="bg-white border-t border-[#e5e5e5] py-20 lg:py-28" style={sectionPad}>
         <div className="max-w-2xl mx-auto text-center">
           <h2
-            className="text-[#000914] font-semibold mb-5"
+            className="text-[#0a0a0a] font-semibold mb-5"
             style={{ fontSize: 'clamp(1.563rem, calc(1.563rem + ((1vw - 0.2rem) * 2.072)), 2.625rem)' }}
           >
             Have a specific problem to work through?
           </h2>
-          <p className="text-[#121010]/70 leading-relaxed mb-10 max-w-xl mx-auto">
+          <p className="text-[#2d2d2d]/70 leading-relaxed mb-10 max-w-xl mx-auto">
             Book a strategy session and bring your question. We&apos;ll give you a clear perspective, a practical framework, and a concrete next step.
           </p>
           <Button href="/contact" size="lg" variant="primary">
