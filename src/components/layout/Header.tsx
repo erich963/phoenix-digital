@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navLinks = [
-  { label: 'Paid Search', href: '/google-ads' },
+  { label: 'Google Ads', href: '/google-ads' },
   { label: 'Websites & Landing Pages', href: '/websites-landing-pages' },
   { label: 'Strategy', href: '/strategy-consultations' },
   { label: 'About', href: '/about' },
@@ -23,7 +23,7 @@ export default function Header() {
           {/* Logo */}
           <Link
             href="/"
-            className="text-[#0a0a0a] font-bold text-xl tracking-tight hover:text-[#2a2a2a] transition-colors"
+            className="text-[#000914] font-bold text-xl tracking-tight hover:text-[#013BA5] transition-colors"
           >
             Phoenix Digital
           </Link>
@@ -34,8 +34,8 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-[0.95rem] font-medium transition-colors hover:text-[#0a0a0a] ${
-                  pathname === link.href ? 'text-[#0a0a0a]' : 'text-[#2d2d2d]'
+                className={`text-[0.95rem] font-medium transition-colors hover:text-[#013BA5] ${
+                  pathname === link.href ? 'text-[#013BA5]' : 'text-[#000914]'
                 }`}
               >
                 {link.label}
@@ -47,7 +47,7 @@ export default function Header() {
           <div className="hidden lg:flex items-center">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold uppercase tracking-wider text-white bg-[#0a0a0a] hover:bg-[#2a2a2a] rounded-none transition-colors"
+              className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold uppercase tracking-wider text-[#FBFBFB] bg-[#000914] border border-[#000914] hover:bg-[#013BA5] rounded-none transition-colors"
             >
               Contact
             </Link>
@@ -55,7 +55,7 @@ export default function Header() {
 
           {/* Mobile menu toggle */}
           <button
-            className="lg:hidden p-2 text-[#0a0a0a] hover:text-[#2a2a2a] transition-colors"
+            className="lg:hidden p-2 text-[#000914] hover:text-[#013BA5] transition-colors"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
@@ -77,10 +77,10 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className={`px-3 py-2.5 text-sm font-medium transition-colors hover:text-[#0a0a0a] hover:bg-gray-50 ${
+                className={`px-3 py-2.5 text-sm font-medium transition-colors hover:text-[#013BA5] hover:bg-gray-50 ${
                   pathname === link.href
-                    ? 'text-[#0a0a0a] bg-gray-50'
-                    : 'text-[#2d2d2d]'
+                    ? 'text-[#013BA5] bg-gray-50'
+                    : 'text-[#000914]'
                 }`}
               >
                 {link.label}
@@ -90,7 +90,7 @@ export default function Header() {
               <Link
                 href="/contact"
                 onClick={() => setMobileOpen(false)}
-                className="flex items-center justify-center w-full px-5 py-3 text-sm font-semibold uppercase tracking-wider text-white bg-[#0a0a0a] hover:bg-[#2a2a2a] rounded-none transition-colors"
+                className="flex items-center justify-center w-full px-5 py-3 text-sm font-semibold uppercase tracking-wider text-[#FBFBFB] bg-[#000914] border border-[#000914] hover:bg-[#013BA5] rounded-none transition-colors"
               >
                 Contact
               </Link>

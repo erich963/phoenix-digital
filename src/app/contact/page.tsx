@@ -22,16 +22,16 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#0a0a0a] py-24 lg:py-32" style={sectionPad}>
+      <section className="bg-[#000914] py-24 lg:py-32" style={sectionPad}>
         <div className="max-w-2xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-white/60 mb-4">Contact</p>
           <h1
-            className="text-[#f5f5f5] font-semibold leading-[1.15] mb-6"
+            className="text-[#FBFBFB] font-semibold leading-[1.15] mb-6"
             style={{ fontSize: 'clamp(1.8rem, calc(1.8rem + ((1vw - 0.2rem) * 2.829)), 3.25rem)' }}
           >
             Let&apos;s Talk
           </h1>
-          <p className="text-[1.05rem] text-[#f5f5f5]/80 leading-relaxed">
+          <p className="text-[1.05rem] text-[#FBFBFB]/80 leading-relaxed">
             We work with B2B companies looking to scale revenue with Google Ads lead generation, proven funnels, process alignment, scalable systems, and focused execution.
           </p>
         </div>
@@ -44,32 +44,32 @@ export default function ContactPage() {
           {/* Left column — context */}
           <div className="lg:col-span-2 space-y-10">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#2d2d2d]/50 mb-4">Good Fit Projects</p>
-              <h2 className="text-xl font-semibold text-[#0a0a0a] mb-5">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">Good Fit Projects</p>
+              <h2 className="text-xl font-semibold text-[#000914] mb-5">
                 What kinds of projects we take on
               </h2>
               <div className="space-y-3">
                 {goodFitProjects.map((item) => (
                   <div key={item} className="flex items-start gap-3">
-                    <CheckCircleIcon className="w-5 h-5 text-[#0a0a0a] flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-[#2d2d2d]/80 leading-relaxed">{item}</span>
+                    <CheckCircleIcon className="w-5 h-5 text-[#000914] flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-[#121010]/80 leading-relaxed">{item}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#2d2d2d]/50 mb-4">What Happens Next</p>
-              <h2 className="text-xl font-semibold text-[#0a0a0a] mb-4">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#121010]/50 mb-4">What Happens Next</p>
+              <h2 className="text-xl font-semibold text-[#000914] mb-4">
                 After you submit
               </h2>
-              <p className="text-sm text-[#2d2d2d]/70 leading-relaxed">
+              <p className="text-sm text-[#121010]/70 leading-relaxed">
                 We&apos;ll review your message and follow up within one business day — either to schedule a consultation or to ask a few clarifying questions about your situation.
               </p>
             </div>
 
             <div className="pt-2">
-              <p className="text-sm text-[#2d2d2d]/50">
+              <p className="text-sm text-[#121010]/50">
                 Based in Portland, Maine.
               </p>
             </div>

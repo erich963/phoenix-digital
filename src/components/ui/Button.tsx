@@ -15,12 +15,15 @@ interface ButtonProps {
 }
 
 const variantClasses: Record<ButtonVariant, string> = {
+  // Primary: navy bg, white text, hover navy-hover (#013BA5)
   primary:
-    'bg-[#0a0a0a] text-white hover:bg-[#2a2a2a] border border-[#0a0a0a] uppercase tracking-wider font-semibold rounded-none',
+    'bg-[#000914] text-[#FBFBFB] hover:bg-[#013BA5] border border-[#000914] uppercase tracking-wider font-semibold',
+  // Secondary: white bg, navy border + text, hover: navy bg white text
   secondary:
-    'bg-white text-[#0a0a0a] border border-[#0a0a0a] hover:bg-[#0a0a0a] hover:text-white uppercase tracking-wider font-semibold rounded-none',
+    'bg-white text-[#000914] border border-[#000914] hover:bg-[#000914] hover:text-[#FBFBFB] uppercase tracking-wider font-semibold',
+  // Outline: transparent bg, white border + text (for dark backgrounds), hover: white bg navy text
   outline:
-    'bg-transparent text-white border border-white hover:bg-white hover:text-[#0a0a0a] uppercase tracking-wider font-semibold rounded-none',
+    'bg-transparent text-[#FBFBFB] border border-[#FBFBFB] hover:bg-white hover:text-[#000914] uppercase tracking-wider font-semibold',
 }
 
 const sizeClasses: Record<ButtonSize, string> = {
