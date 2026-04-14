@@ -21,10 +21,10 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-slate-900 py-24 lg:py-32" style={pad}>
+      <section className="bg-white border-b border-gray-100 py-24 lg:py-32" style={pad}>
         <div className="max-w-2xl">
-          <p className="text-brand-light font-medium text-sm tracking-wide uppercase mb-4">Contact</p>
-          <h1 className="text-display text-white mb-6">Let&apos;s Talk</h1>
+          <p className="text-brand font-medium text-sm tracking-wide uppercase mb-4">Contact</p>
+          <h1 className="text-display text-slate-800 mb-6">Let&apos;s Talk</h1>
           <p className="text-slate-400 text-body-lg">
             We work with B2B companies looking to scale revenue with paid search, proven funnels, and focused execution.
           </p>
@@ -37,7 +37,7 @@ export default function ContactPage() {
           <div className="lg:col-span-2 space-y-10">
             <div>
               <p className="text-brand font-medium text-sm tracking-wide uppercase mb-3">Good Fit Projects</p>
-              <h2 className="text-xl font-semibold text-slate-900 mb-5">What kinds of projects we take on</h2>
+              <h2 className="text-xl font-semibold text-slate-800 mb-5">What kinds of projects we take on</h2>
               <div className="space-y-3">
                 {goodFitProjects.map((item) => (
                   <div key={item} className="flex items-start gap-3">
@@ -50,7 +50,7 @@ export default function ContactPage() {
 
             <div>
               <p className="text-brand font-medium text-sm tracking-wide uppercase mb-3">What Happens Next</p>
-              <h2 className="text-xl font-semibold text-slate-900 mb-4">After you submit</h2>
+              <h2 className="text-xl font-semibold text-slate-800 mb-4">After you submit</h2>
               <p className="text-sm text-slate-500 leading-relaxed">
                 We&apos;ll review your message and follow up within one business day — either to schedule a consultation or to ask a few clarifying questions about your situation.
               </p>
