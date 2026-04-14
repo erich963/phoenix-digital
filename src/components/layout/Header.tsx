@@ -17,25 +17,23 @@ export default function Header() {
   const pathname = usePathname()
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-[#e5e5e5]">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-neutral-100">
       <div style={{ paddingLeft: 'min(6.5rem, 8vw)', paddingRight: 'min(6.5rem, 8vw)' }}>
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
           <Link
             href="/"
-            className="text-[#000914] font-bold text-xl tracking-tight hover:text-[#013BA5] transition-colors"
+            className="text-neutral-900 font-bold text-lg tracking-tight hover:text-accent transition-colors"
           >
             Phoenix Digital
           </Link>
 
-          {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-9">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-[0.95rem] font-medium transition-colors hover:text-[#013BA5] ${
-                  pathname === link.href ? 'text-[#013BA5]' : 'text-[#000914]'
+                className={`text-[0.875rem] font-medium transition-colors hover:text-accent ${
+                  pathname === link.href ? 'text-accent' : 'text-neutral-500'
                 }`}
               >
                 {link.label}
@@ -43,44 +41,35 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Desktop CTA */}
           <div className="hidden lg:flex items-center">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold uppercase tracking-wider text-[#FBFBFB] bg-[#000914] border border-[#000914] hover:bg-[#013BA5] rounded-none transition-colors"
+              className="inline-flex items-center justify-center px-5 py-2 text-sm font-semibold text-white bg-neutral-900 hover:bg-accent rounded-lg transition-colors"
             >
-              Contact
+              Book a Consultation
             </Link>
           </div>
 
-          {/* Mobile menu toggle */}
           <button
-            className="lg:hidden p-2 text-[#000914] hover:text-[#013BA5] transition-colors"
+            className="lg:hidden p-2 text-neutral-600 hover:text-neutral-900 transition-colors"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
-            {mobileOpen ? (
-              <XMarkIcon className="w-6 h-6" />
-            ) : (
-              <Bars3Icon className="w-6 h-6" />
-            )}
+            {mobileOpen ? <XMarkIcon className="w-6 h-6" /> : <Bars3Icon className="w-6 h-6" />}
           </button>
         </div>
       </div>
 
-      {/* Mobile Nav */}
       {mobileOpen && (
-        <div className="lg:hidden border-t border-[#e5e5e5] bg-white">
+        <div className="lg:hidden border-t border-neutral-100 bg-white">
           <nav className="px-6 py-4 flex flex-col gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className={`px-3 py-2.5 text-sm font-medium transition-colors hover:text-[#013BA5] hover:bg-gray-50 ${
-                  pathname === link.href
-                    ? 'text-[#013BA5] bg-gray-50'
-                    : 'text-[#000914]'
+                className={`px-3 py-2.5 text-sm font-medium rounded-lg transition-colors hover:text-accent hover:bg-neutral-50 ${
+                  pathname === link.href ? 'text-accent bg-neutral-50' : 'text-neutral-700'
                 }`}
               >
                 {link.label}
@@ -90,9 +79,9 @@ export default function Header() {
               <Link
                 href="/contact"
                 onClick={() => setMobileOpen(false)}
-                className="flex items-center justify-center w-full px-5 py-3 text-sm font-semibold uppercase tracking-wider text-[#FBFBFB] bg-[#000914] border border-[#000914] hover:bg-[#013BA5] rounded-none transition-colors"
+                className="flex items-center justify-center w-full px-5 py-3 text-sm font-semibold text-white bg-neutral-900 hover:bg-accent rounded-lg transition-colors"
               >
-                Contact
+                Book a Consultation
               </Link>
             </div>
           </nav>

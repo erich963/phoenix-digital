@@ -4,33 +4,29 @@
 
 @layer base {
   html {
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   body {
-    font-family: 'Barlow', sans-serif;
-    color: #121010;
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #404040;
     background: #fff;
     font-size: 1rem;
     line-height: 1.6;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 600;
-    color: #000914;
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #0a0a0a;
     line-height: 1.2;
+    letter-spacing: -0.01em;
   }
   a {
-    color: #000914;
-  }
-  a:hover {
-    color: #013BA5;
+    color: #0a0a0a;
   }
 }
 
 @layer components {
-  .btn-primary {
-    @apply inline-flex items-center justify-center px-5 py-2.5 bg-navy text-offwhite font-semibold uppercase tracking-wider text-sm border border-navy rounded-none transition-colors hover:bg-navy-hover;
-  }
   .section-pad {
     padding-left: min(6.5rem, 8vw);
     padding-right: min(6.5rem, 8vw);
