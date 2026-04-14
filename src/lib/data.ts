@@ -1,43 +1,43 @@
 export const navLinks = [
-  { label: 'Google Ads', href: '/google-ads' },
-  { label: 'Websites & Landing Pages', href: '/websites-landing-pages' },
-  { label: 'Strategy', href: '/strategy-consultations' },
+  { label: 'Paid Search', href: '/paid-search' },
+  { label: 'Websites', href: '/websites' },
+  { label: 'Strategic Sessions', href: '/strategic-sessions' },
   { label: 'About', href: '/about' },
-  { label: 'Contact', href: '/contact' },
 ]
 
 export const services = [
   {
-    title: 'Google Ads Management',
+    title: 'Paid Search',
     description:
-      'Disciplined paid search management built around lead quality, economics, and pipeline value — not vanity metrics.',
-    href: '/google-ads',
+      'Google Ads management and landing page strategy built around lead quality, pipeline value, and measurable ROI.',
+    href: '/paid-search',
     features: [
       'Account strategy & architecture',
       'Intent-based keyword targeting',
       'Ad copy built to qualify leads',
       'Conversion tracking setup',
+      'Landing page builds',
       'Monthly reporting tied to pipeline',
     ],
   },
   {
-    title: 'Websites & Landing Pages',
+    title: 'Websites',
     description:
-      'Fast, conversion-focused websites and landing pages for B2B growth. Built to support paid acquisition and lead generation.',
-    href: '/websites-landing-pages',
+      'Fast, conversion-focused B2B websites built to support lead generation and establish credibility.',
+    href: '/websites',
     features: [
-      'Landing pages for paid campaigns',
-      'Lead gen websites (3–8 pages)',
+      'Lead gen websites (3-8 pages)',
       'Site refreshes & messaging updates',
       'Mobile-responsive, modern design',
+      'SEO foundations',
       'Analytics and tracking built in',
     ],
   },
   {
-    title: 'Strategy Consultations',
+    title: 'Strategic Sessions',
     description:
-      'Senior-level advisory sessions covering marketing, data, RevOps, CRM, financial planning, and applied AI strategy.',
-    href: '/strategy-consultations',
+      'Senior-level advisory sessions covering marketing, data, RevOps, CRM, and applied AI strategy.',
+    href: '/strategic-sessions',
     features: [
       'Marketing & channel strategy',
       'Data, tracking & analytics',
@@ -101,35 +101,23 @@ export const whyItems = [
 export const testimonials = [
   {
     name: 'Katharine R.',
+    role: 'Financial Services',
+    initials: 'KR',
     rating: 5,
     quote:
       'Working with Phoenix Digital was a breath of fresh air. Clear communication, real expertise, and exactly the kind of support I needed during a critical business transition.',
   },
   {
     name: 'Jared W.',
+    role: 'Business Owner',
+    initials: 'JW',
     rating: 5,
     quote:
-      'Exceptional attention to detail, creative thinking, and a refreshingly honest approach. I\'d recommend Phoenix Digital without hesitation.',
+      "Exceptional attention to detail, creative thinking, and a refreshingly honest approach. I'd recommend Phoenix Digital without hesitation.",
   },
 ]
 
-export const trustItems = [
-  'Senior-level execution',
-  'Google Ads specialization',
-  'Conversion-focused websites',
-  'Clear scope, no bloat',
-  'Owner-led accountability',
-]
-
-export const whoItIsFor = [
-  'B2B services firms',
-  'Niche operators and consultancies',
-  'Growth-stage companies',
-  'Businesses where each lead has real value',
-  'Organizations that need speed and clarity',
-]
-
-export const googleAdsFAQs = [
+export const paidSearchFAQs = [
   {
     question: 'Do you require a minimum ad spend?',
     answer:
@@ -143,7 +131,7 @@ export const googleAdsFAQs = [
   {
     question: 'Do you handle landing pages too?',
     answer:
-      'Yes. Landing page builds and optimizations are available as part of an engagement or as standalone projects.',
+      'Yes. Landing page builds and optimizations are part of paid search engagements or available as standalone projects.',
   },
   {
     question: 'How is performance reported?',
@@ -154,9 +142,9 @@ export const googleAdsFAQs = [
 
 export const websitesFAQs = [
   {
-    question: 'What\'s a typical turnaround time?',
+    question: "What's a typical turnaround time?",
     answer:
-      'Landing pages can often be delivered in 1–2 weeks. Full websites typically range from 3–6 weeks depending on scope.',
+      'Full websites typically range from 3-6 weeks depending on scope and complexity.',
   },
   {
     question: 'Do you do ongoing website maintenance?',
@@ -166,7 +154,7 @@ export const websitesFAQs = [
   {
     question: 'What tech stack do you use?',
     answer:
-      'Modern web stack (Next.js, React, Tailwind) built for performance and easy deployment.',
+      'Modern web stack (Next.js, React, Tailwind) built for performance and easy deployment via Vercel.',
   },
 ]
 
@@ -178,8 +166,7 @@ export const strategyCategories = [
   },
   {
     title: 'Data, Tracking & Analytics',
-    description:
-      'GA4, GTM, conversion tracking, attribution, dashboards.',
+    description: 'GA4, GTM, conversion tracking, attribution, dashboards.',
   },
   {
     title: 'RevOps & Go-To-Market',
