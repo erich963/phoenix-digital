@@ -11,14 +11,6 @@ const config: Config = {
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
-      colors: {
-        brand: {
-          DEFAULT: '#6366f1',
-          dark: '#4f46e5',
-          light: '#818cf8',
-          subtle: '#eef2ff',
-        },
-      },
       fontSize: {
         display: [
           'clamp(2.25rem, calc(2.25rem + ((1vw - 0.2rem) * 3)), 3.75rem)',

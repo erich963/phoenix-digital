@@ -15,9 +15,9 @@ interface ButtonProps {
 }
 
 const variantClasses: Record<ButtonVariant, string> = {
-  primary: 'bg-slate-900 text-white hover:bg-brand border border-slate-900 hover:border-brand font-semibold',
-  secondary: 'bg-white text-slate-900 border border-slate-200 hover:border-brand hover:text-brand font-semibold',
-  outline: 'bg-transparent text-slate-300 border border-slate-700 hover:border-slate-500 hover:text-white font-medium',
+  primary: 'bg-slate-900 text-white hover:bg-slate-700 border border-slate-900 hover:border-slate-700 font-semibold',
+  secondary: 'bg-white text-slate-700 border border-slate-200 hover:border-slate-300 hover:text-slate-900 font-semibold',
+  outline: 'bg-transparent text-slate-500 border border-slate-200 hover:border-slate-300 hover:text-slate-700 font-medium',
 }
 
 const sizeClasses: Record<ButtonSize, string> = {

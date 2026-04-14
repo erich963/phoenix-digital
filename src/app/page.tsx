@@ -18,32 +18,29 @@ export default function HomePage() {
   return (
     <>
       {/* ── Hero ──────────────────────────────────────────────────── */}
-      <section className="bg-white py-28 lg:py-40 border-b border-gray-100" style={pad}>
+      <section className="bg-white py-28 lg:py-40 border-b border-slate-200" style={pad}>
         <div className="max-w-2xl">
-          <p className="text-brand font-medium text-sm tracking-wide uppercase mb-4">
+          <p className="text-slate-400 font-medium text-sm tracking-wide uppercase mb-4">
             B2B Lead Generation
           </p>
-
-          <h1 className="text-display text-slate-800 mb-6">
+          <h1 className="text-display text-slate-900 mb-6">
             We Build B2B Lead Generation Systems
           </h1>
-
           <p className="text-slate-400 text-body-lg mb-10 max-w-xl">
             Paid search management, conversion-focused websites, and practical
             growth strategy — for B2B companies that need qualified pipeline,
             not vanity metrics.
           </p>
-
           <div className="flex flex-wrap gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-7 py-3.5 text-sm font-semibold text-white bg-brand hover:bg-brand-dark rounded-lg transition-colors"
+              className="inline-flex items-center justify-center px-7 py-3.5 text-sm font-semibold text-white bg-slate-900 hover:bg-slate-700 rounded-lg transition-colors"
             >
               Book a Consultation
             </Link>
             <Link
               href="#services"
-              className="inline-flex items-center justify-center px-7 py-3.5 text-sm font-medium text-slate-500 border border-gray-200 hover:border-gray-300 hover:text-slate-700 rounded-lg transition-colors"
+              className="inline-flex items-center justify-center px-7 py-3.5 text-sm font-medium text-slate-500 border border-slate-200 hover:border-slate-300 hover:text-slate-700 rounded-lg transition-colors"
             >
               View Services
             </Link>
@@ -52,15 +49,15 @@ export default function HomePage() {
       </section>
 
       {/* ── Services ──────────────────────────────────────────────── */}
-      <section id="services" className="bg-gray-50 py-24 lg:py-32" style={pad}>
+      <section id="services" className="bg-slate-100 py-24 lg:py-32" style={pad}>
         <div className="max-w-xl mb-14">
-          <p className="text-brand font-medium text-sm tracking-wide uppercase mb-3">
+          <p className="text-slate-400 font-medium text-sm tracking-wide uppercase mb-3">
             What We Do
           </p>
-          <h2 className="text-heading text-slate-800 mb-4">
+          <h2 className="text-heading text-slate-900 mb-4">
             Three services. One focus: qualified leads.
           </h2>
-          <p className="text-slate-400 text-body-lg">
+          <p className="text-slate-500 text-body-lg">
             Everything we do is built around one goal — generating qualified B2B
             leads and pipeline.
           </p>
@@ -71,9 +68,9 @@ export default function HomePage() {
             <Link
               key={service.title}
               href={service.href}
-              className="group bg-white border border-gray-200 rounded-xl p-8 hover:shadow-card-hover hover:border-gray-300 transition-all duration-300"
+              className="group bg-white border border-slate-200 rounded-xl p-8 hover:shadow-card-hover hover:border-slate-300 transition-all duration-300"
             >
-              <h3 className="text-lg font-semibold text-slate-800 mb-3 group-hover:text-brand transition-colors">
+              <h3 className="text-lg font-semibold text-slate-900 mb-3 group-hover:text-slate-600 transition-colors">
                 {service.title}
               </h3>
               <p className="text-[0.925rem] text-slate-400 leading-relaxed mb-5">
@@ -82,12 +79,12 @@ export default function HomePage() {
               <ul className="space-y-2 mb-6">
                 {service.features.map((f) => (
                   <li key={f} className="flex items-center gap-2.5 text-sm text-slate-500">
-                    <span className="w-1 h-1 rounded-full bg-slate-300 flex-shrink-0" />
+                    <span className="w-1 h-1 rounded-full bg-slate-400 flex-shrink-0" />
                     {f}
                   </li>
                 ))}
               </ul>
-              <span className="text-sm font-medium text-brand inline-flex items-center gap-1.5 group-hover:gap-2.5 transition-all">
+              <span className="text-sm font-medium text-slate-900 inline-flex items-center gap-1.5 group-hover:gap-2.5 transition-all">
                 Learn more
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
@@ -99,21 +96,21 @@ export default function HomePage() {
       </section>
 
       {/* ── How It Works ──────────────────────────────────────────── */}
-      <section className="bg-white py-24 lg:py-32 border-y border-gray-100" style={pad}>
+      <section className="bg-white py-24 lg:py-32 border-y border-slate-200" style={pad}>
         <div className="text-center max-w-xl mx-auto mb-16">
-          <p className="text-brand font-medium text-sm tracking-wide uppercase mb-3">
+          <p className="text-slate-400 font-medium text-sm tracking-wide uppercase mb-3">
             How It Works
           </p>
-          <h2 className="text-heading text-slate-800">From diagnosis to results</h2>
+          <h2 className="text-heading text-slate-900">From diagnosis to results</h2>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
           {processSteps.map((step) => (
             <div key={step.number} className="text-center lg:text-left">
-              <div className="w-10 h-10 rounded-lg bg-gray-100 text-slate-500 flex items-center justify-center mx-auto lg:mx-0 mb-5 text-sm font-bold">
+              <div className="w-10 h-10 rounded-lg bg-slate-900 text-white flex items-center justify-center mx-auto lg:mx-0 mb-5 text-sm font-bold">
                 {step.number}
               </div>
-              <h3 className="text-lg font-semibold text-slate-800 mb-2">{step.title}</h3>
+              <h3 className="text-lg font-semibold text-slate-900 mb-2">{step.title}</h3>
               <p className="text-sm text-slate-400 leading-relaxed">{step.description}</p>
             </div>
           ))}
@@ -121,16 +118,16 @@ export default function HomePage() {
       </section>
 
       {/* ── Why Phoenix Digital ────────────────────────────────────── */}
-      <section className="bg-gray-50 py-24 lg:py-32" style={pad}>
+      <section className="bg-slate-100 py-24 lg:py-32" style={pad}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
           <div>
-            <p className="text-brand font-medium text-sm tracking-wide uppercase mb-3">
+            <p className="text-slate-400 font-medium text-sm tracking-wide uppercase mb-3">
               Why Phoenix Digital
             </p>
-            <h2 className="text-heading text-slate-800 mb-6">
+            <h2 className="text-heading text-slate-900 mb-6">
               A simpler, more focused approach to B2B growth
             </h2>
-            <div className="space-y-4 text-slate-400 leading-relaxed">
+            <div className="space-y-4 text-slate-500 leading-relaxed">
               <p>
                 The old agency model is bloated. Large teams, vague retainers,
                 junior handoffs, and tools that create complexity instead of
@@ -147,8 +144,8 @@ export default function HomePage() {
 
           <div className="space-y-4">
             {whyItems.map((item, i) => (
-              <div key={item.title} className="flex items-start gap-4 bg-white border border-gray-200 rounded-xl p-5">
-                <span className="flex-shrink-0 w-8 h-8 rounded-lg bg-gray-100 text-slate-500 text-sm font-semibold flex items-center justify-center mt-0.5">
+              <div key={item.title} className="flex items-start gap-4 bg-white border border-slate-200 rounded-xl p-5">
+                <span className="flex-shrink-0 w-8 h-8 rounded-lg bg-slate-100 text-slate-500 text-sm font-semibold flex items-center justify-center mt-0.5">
                   {i + 1}
                 </span>
                 <div>
@@ -162,17 +159,17 @@ export default function HomePage() {
       </section>
 
       {/* ── Social Proof ──────────────────────────────────────────── */}
-      <section className="bg-white py-24 lg:py-32 border-y border-gray-100" style={pad}>
+      <section className="bg-white py-24 lg:py-32 border-y border-slate-200" style={pad}>
         <div className="max-w-xl mb-14">
-          <p className="text-brand font-medium text-sm tracking-wide uppercase mb-3">
+          <p className="text-slate-400 font-medium text-sm tracking-wide uppercase mb-3">
             Client Feedback
           </p>
-          <h2 className="text-heading text-slate-800">What our clients say</h2>
+          <h2 className="text-heading text-slate-900">What our clients say</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {testimonials.map((t) => (
-            <div key={t.name} className="bg-gray-50 border border-gray-100 rounded-xl p-8">
+            <div key={t.name} className="bg-slate-50 border border-slate-200 rounded-xl p-8">
               <div className="flex gap-0.5 mb-5">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <svg key={i} className="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
@@ -184,7 +181,7 @@ export default function HomePage() {
                 &ldquo;{t.quote}&rdquo;
               </p>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-xs font-semibold text-slate-500">
+                <div className="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-xs font-semibold text-slate-500">
                   {t.initials}
                 </div>
                 <div>
@@ -198,16 +195,16 @@ export default function HomePage() {
       </section>
 
       {/* ── Final CTA + Contact Form ──────────────────────────────── */}
-      <section className="bg-gray-50 py-24 lg:py-32" style={pad}>
+      <section className="bg-slate-100 py-24 lg:py-32" style={pad}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
           <div>
-            <p className="text-brand font-medium text-sm tracking-wide uppercase mb-4">
+            <p className="text-slate-400 font-medium text-sm tracking-wide uppercase mb-4">
               Get Started
             </p>
-            <h2 className="text-heading text-slate-800 mb-5">
+            <h2 className="text-heading text-slate-900 mb-5">
               Ready to build a lead generation system that actually works?
             </h2>
-            <p className="text-slate-400 text-body-lg mb-8">
+            <p className="text-slate-500 text-body-lg mb-8">
               Whether you need paid search management, a conversion-focused
               website, or strategic guidance — let&apos;s build clarity,
               momentum, and pipeline.
@@ -221,7 +218,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="bg-white border border-gray-200 rounded-xl p-8">
+          <div className="bg-white border border-slate-200 rounded-xl p-8">
             <ContactForm />
           </div>
         </div>
