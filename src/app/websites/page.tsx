@@ -43,16 +43,16 @@ export default function WebsitesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-white border-b border-slate-200 py-32 lg:py-40" style={pad}>
+      <section className="bg-white border-b border-slate-200 py-20 sm:py-28 lg:py-36" style={pad}>
         <div className="max-w-3xl">
-          <p className="text-slate-400 font-medium text-sm tracking-wide uppercase mb-4">Websites</p>
-          <h1 className="text-display text-slate-800 mb-6">
+          <p className="text-slate-400 font-medium text-sm tracking-wide uppercase mb-3">Websites</p>
+          <h1 className="text-display text-slate-900 mb-6">
             Fast, conversion-focused websites for B2B growth.
           </h1>
           <p className="text-slate-400 text-body-lg mb-10 max-w-2xl">
             Built to support lead generation and establish credibility — not just to look good.
           </p>
-          <Link href="/contact" className="inline-flex items-center justify-center px-7 py-3.5 text-sm font-semibold text-white bg-slate-900 hover:bg-slate-700 rounded-lg transition-colors">
+          <Link href="/contact" className="inline-flex items-center justify-center w-full sm:w-auto px-7 py-3.5 text-sm font-semibold text-white bg-slate-900 hover:bg-slate-700 rounded-lg transition-colors">
             Book a Consultation
           </Link>
         </div>
@@ -60,18 +60,18 @@ export default function WebsitesPage() {
 
       {/* What We Build */}
       <section className="bg-slate-100 border-b border-slate-200 py-20 lg:py-28" style={pad}>
-        <div className="mb-14">
+        <div className="mb-12">
           <p className="text-slate-400 font-medium text-sm tracking-wide uppercase mb-3">What We Build</p>
-          <h2 className="text-heading text-slate-800 mb-4">Three types of projects</h2>
+          <h2 className="text-heading text-slate-900 mb-4">Three types of projects</h2>
           <p className="text-slate-500 max-w-xl leading-relaxed">
             From site refreshes to full B2B websites, every project is built with the same goal: generate more qualified leads.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {projectTypes.map((project) => (
-            <div key={project.title} className="bg-white border border-gray-200 rounded-xl p-8">
+            <div key={project.title} className="bg-white border border-slate-200 rounded-xl p-7">
               <div className="w-8 h-0.5 bg-slate-900 mb-5 rounded-full" />
-              <h3 className="text-lg font-semibold text-slate-800 mb-3">{project.title}</h3>
+              <h3 className="text-lg font-semibold text-slate-900 mb-3">{project.title}</h3>
               <p className="text-sm text-slate-500 leading-relaxed mb-5">{project.description}</p>
               <div className="flex flex-wrap gap-2">
                 {project.tags.map((tag) => (
@@ -87,19 +87,19 @@ export default function WebsitesPage() {
 
       {/* What's Included */}
       <section className="bg-white py-20 lg:py-28 border-b border-slate-200" style={pad}>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           <div>
             <p className="text-slate-400 font-medium text-sm tracking-wide uppercase mb-3">What&apos;s Included</p>
-            <h2 className="text-heading text-slate-800 mb-6">Everything needed to perform</h2>
+            <h2 className="text-heading text-slate-900 mb-6">Everything needed to perform</h2>
             <p className="text-slate-500 leading-relaxed">
               Every project includes the core elements for conversion performance — not just visual design. Tracking, performance foundations, and clear CTAs are part of every deliverable.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-3">
             {whatWeInclude.map((item) => (
-              <div key={item} className="flex items-center gap-3 bg-slate-50 border border-slate-200 rounded-lg px-5 py-3.5">
+              <div key={item} className="flex items-center gap-3 bg-slate-100 border border-slate-200 rounded-lg px-4 py-3">
                 <span className="w-1.5 h-1.5 rounded-full bg-slate-400 flex-shrink-0" />
-                <span className="text-sm text-slate-600">{item}</span>
+                <span className="text-sm text-slate-500">{item}</span>
               </div>
             ))}
           </div>
@@ -107,17 +107,17 @@ export default function WebsitesPage() {
       </section>
 
       {/* Tech Stack */}
-      <section className="bg-slate-100 py-14 lg:py-16" style={pad}>
+      <section className="bg-slate-100 border-b border-slate-200 py-14 lg:py-16" style={pad}>
         <div className="flex flex-col md:flex-row md:items-center gap-8">
           <div className="flex-1">
-            <h2 className="text-xl font-semibold text-slate-800 mb-3">Modern stack built for performance</h2>
+            <h2 className="text-xl font-semibold text-slate-900 mb-3">Modern stack built for performance</h2>
             <p className="text-slate-500 leading-relaxed text-sm max-w-xl">
               Every site is built on a modern web stack — fast load times, reliable deployment, and easy handoff. No bloated CMS dependencies or legacy frameworks.
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
             {['Next.js', 'React', 'Tailwind CSS', 'Vercel'].map((tech) => (
-              <span key={tech} className="inline-block text-sm font-semibold text-slate-700 bg-white border border-gray-200 rounded-lg px-4 py-2">
+              <span key={tech} className="inline-block text-sm font-semibold text-slate-700 bg-white border border-slate-200 rounded-lg px-4 py-2">
                 {tech}
               </span>
             ))}
@@ -127,18 +127,18 @@ export default function WebsitesPage() {
 
       {/* FAQ */}
       <section className="bg-white py-20 lg:py-28 border-b border-slate-200" style={pad}>
-        <div className="mb-14">
+        <div className="mb-12">
           <p className="text-slate-400 font-medium text-sm tracking-wide uppercase mb-3">FAQ</p>
-          <h2 className="text-heading text-slate-800">Common questions</h2>
+          <h2 className="text-heading text-slate-900">Common questions</h2>
         </div>
         <div className="max-w-3xl space-y-4">
           {websitesFAQs.map((faq) => (
-            <details key={faq.question} className="group bg-slate-50 border border-slate-200 rounded-xl overflow-hidden">
+            <details key={faq.question} className="group bg-white border border-slate-200 rounded-xl overflow-hidden">
               <summary className="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none">
-                <span className="text-base font-semibold text-slate-800">{faq.question}</span>
+                <span className="text-sm sm:text-base font-semibold text-slate-900">{faq.question}</span>
                 <ChevronDownIcon className="w-5 h-5 text-slate-300 flex-shrink-0 group-open:rotate-180 transition-transform" />
               </summary>
-              <div className="px-6 pb-5 border-t border-gray-200">
+              <div className="px-6 pb-5 border-t border-slate-200">
                 <p className="text-sm text-slate-500 leading-relaxed pt-4">{faq.answer}</p>
               </div>
             </details>
@@ -149,11 +149,11 @@ export default function WebsitesPage() {
       {/* CTA */}
       <section className="bg-white py-20 lg:py-28" style={pad}>
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-heading text-slate-800 mb-5">Ready to build a site that converts?</h2>
+          <h2 className="text-heading text-slate-900 mb-5">Ready to build a site that converts?</h2>
           <p className="text-slate-500 leading-relaxed mb-10 max-w-xl mx-auto">
             Whether you need a full B2B website or a targeted site refresh, let&apos;s talk about your goals and what the right project looks like.
           </p>
-          <Link href="/contact" className="inline-flex items-center justify-center px-7 py-3.5 text-sm font-semibold text-white bg-slate-900 hover:bg-slate-700 rounded-lg transition-colors">
+          <Link href="/contact" className="inline-flex items-center justify-center w-full sm:w-auto px-7 py-3.5 text-sm font-semibold text-white bg-slate-900 hover:bg-slate-700 rounded-lg transition-colors">
             Book a Consultation
           </Link>
         </div>

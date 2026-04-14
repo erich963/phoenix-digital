@@ -18,7 +18,7 @@ export default function HomePage() {
   return (
     <>
       {/* ── Hero ──────────────────────────────────────────────────── */}
-      <section className="bg-white py-28 lg:py-40 border-b border-slate-200" style={pad}>
+      <section className="bg-white py-20 sm:py-28 lg:py-36 border-b border-slate-200" style={pad}>
         <div className="max-w-2xl">
           <p className="text-slate-400 font-medium text-sm tracking-wide uppercase mb-4">
             B2B Lead Generation
@@ -31,7 +31,7 @@ export default function HomePage() {
             growth strategy — for B2B companies that need qualified pipeline,
             not vanity metrics.
           </p>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
             <Link
               href="/contact"
               className="inline-flex items-center justify-center px-7 py-3.5 text-sm font-semibold text-white bg-slate-900 hover:bg-slate-700 rounded-lg transition-colors"
@@ -49,8 +49,8 @@ export default function HomePage() {
       </section>
 
       {/* ── Services ──────────────────────────────────────────────── */}
-      <section id="services" className="bg-slate-100 py-24 lg:py-32" style={pad}>
-        <div className="max-w-xl mb-14">
+      <section id="services" className="bg-slate-100 py-20 lg:py-28" style={pad}>
+        <div className="max-w-xl mb-12">
           <p className="text-slate-400 font-medium text-sm tracking-wide uppercase mb-3">
             What We Do
           </p>
@@ -63,17 +63,17 @@ export default function HomePage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
           {services.map((service) => (
             <Link
               key={service.title}
               href={service.href}
-              className="group bg-white border border-slate-200 rounded-xl p-8 hover:shadow-card-hover hover:border-slate-300 transition-all duration-300"
+              className="group bg-white border border-slate-200 rounded-xl p-7 hover:shadow-card-hover hover:border-slate-300 transition-all duration-300"
             >
               <h3 className="text-lg font-semibold text-slate-900 mb-3 group-hover:text-slate-600 transition-colors">
                 {service.title}
               </h3>
-              <p className="text-[0.925rem] text-slate-400 leading-relaxed mb-5">
+              <p className="text-sm text-slate-400 leading-relaxed mb-5">
                 {service.description}
               </p>
               <ul className="space-y-2 mb-6">
@@ -96,21 +96,21 @@ export default function HomePage() {
       </section>
 
       {/* ── How It Works ──────────────────────────────────────────── */}
-      <section className="bg-white py-24 lg:py-32 border-y border-slate-200" style={pad}>
-        <div className="text-center max-w-xl mx-auto mb-16">
+      <section className="bg-white py-20 lg:py-28 border-b border-slate-200" style={pad}>
+        <div className="text-center max-w-xl mx-auto mb-14">
           <p className="text-slate-400 font-medium text-sm tracking-wide uppercase mb-3">
             How It Works
           </p>
           <h2 className="text-heading text-slate-900">From diagnosis to results</h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
           {processSteps.map((step) => (
-            <div key={step.number} className="text-center lg:text-left">
-              <div className="w-10 h-10 rounded-lg bg-slate-900 text-white flex items-center justify-center mx-auto lg:mx-0 mb-5 text-sm font-bold">
+            <div key={step.number}>
+              <div className="w-10 h-10 rounded-lg bg-slate-900 text-white flex items-center justify-center mb-5 text-sm font-bold">
                 {step.number}
               </div>
-              <h3 className="text-lg font-semibold text-slate-900 mb-2">{step.title}</h3>
+              <h3 className="text-base font-semibold text-slate-900 mb-2">{step.title}</h3>
               <p className="text-sm text-slate-400 leading-relaxed">{step.description}</p>
             </div>
           ))}
@@ -118,8 +118,8 @@ export default function HomePage() {
       </section>
 
       {/* ── Why Phoenix Digital ────────────────────────────────────── */}
-      <section className="bg-slate-100 py-24 lg:py-32" style={pad}>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+      <section className="bg-slate-100 py-20 lg:py-28" style={pad}>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           <div>
             <p className="text-slate-400 font-medium text-sm tracking-wide uppercase mb-3">
               Why Phoenix Digital
@@ -159,17 +159,17 @@ export default function HomePage() {
       </section>
 
       {/* ── Social Proof ──────────────────────────────────────────── */}
-      <section className="bg-white py-24 lg:py-32 border-y border-slate-200" style={pad}>
-        <div className="max-w-xl mb-14">
+      <section className="bg-white py-20 lg:py-28 border-b border-slate-200" style={pad}>
+        <div className="max-w-xl mb-12">
           <p className="text-slate-400 font-medium text-sm tracking-wide uppercase mb-3">
             Client Feedback
           </p>
           <h2 className="text-heading text-slate-900">What our clients say</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {testimonials.map((t) => (
-            <div key={t.name} className="bg-slate-50 border border-slate-200 rounded-xl p-8">
+            <div key={t.name} className="bg-slate-50 border border-slate-200 rounded-xl p-7">
               <div className="flex gap-0.5 mb-5">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <svg key={i} className="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
@@ -195,10 +195,10 @@ export default function HomePage() {
       </section>
 
       {/* ── Final CTA + Contact Form ──────────────────────────────── */}
-      <section className="bg-slate-100 py-24 lg:py-32" style={pad}>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+      <section className="bg-slate-100 py-20 lg:py-28" style={pad}>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           <div>
-            <p className="text-slate-400 font-medium text-sm tracking-wide uppercase mb-4">
+            <p className="text-slate-400 font-medium text-sm tracking-wide uppercase mb-3">
               Get Started
             </p>
             <h2 className="text-heading text-slate-900 mb-5">
@@ -218,7 +218,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="bg-white border border-slate-200 rounded-xl p-8">
+          <div className="bg-white border border-slate-200 rounded-xl p-6 sm:p-8">
             <ContactForm />
           </div>
         </div>

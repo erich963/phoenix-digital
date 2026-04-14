@@ -20,10 +20,10 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-white border-b border-slate-200 py-32 lg:py-40" style={pad}>
+      <section className="bg-white border-b border-slate-200 py-20 sm:py-28 lg:py-36" style={pad}>
         <div className="max-w-3xl">
-          <p className="text-slate-400 font-medium text-sm tracking-wide uppercase mb-4">About Phoenix Digital</p>
-          <h1 className="text-display text-slate-800 mb-6">Built for clarity. Focused on outcomes.</h1>
+          <p className="text-slate-400 font-medium text-sm tracking-wide uppercase mb-3">About Phoenix Digital</p>
+          <h1 className="text-display text-slate-900 mb-6">Built for clarity. Focused on outcomes.</h1>
           <p className="text-slate-400 text-body-lg max-w-2xl">
             Phoenix Digital exists because the old agency model stopped working for most B2B businesses. Too many agencies are built around complexity — large teams, opaque retainers, and broad deliverables that are hard to measure. We were built as a direct response to that.
           </p>
@@ -32,10 +32,10 @@ export default function AboutPage() {
 
       {/* The Story */}
       <section className="bg-slate-100 border-b border-slate-200 py-20 lg:py-28" style={pad}>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           <div>
             <p className="text-slate-400 font-medium text-sm tracking-wide uppercase mb-3">Our Story</p>
-            <h2 className="text-heading text-slate-800 mb-6">A direct response to a broken model</h2>
+            <h2 className="text-heading text-slate-900 mb-6">A direct response to a broken model</h2>
             <div className="space-y-4 text-slate-500 leading-relaxed">
               <p>The traditional agency model was built for a different era — one that required large teams to produce work that can now be executed by a focused, senior-led operation with the right tools and process.</p>
               <p>The result for most clients was unnecessary overhead, junior execution, fragmented accountability, and retainers that grew without proportional returns.</p>
@@ -44,7 +44,7 @@ export default function AboutPage() {
           </div>
           <div>
             <p className="text-slate-400 font-medium text-sm tracking-wide uppercase mb-3">The Model</p>
-            <h2 className="text-heading text-slate-800 mb-6">Lean, expert-led, AI-enabled</h2>
+            <h2 className="text-heading text-slate-900 mb-6">Lean, expert-led, AI-enabled</h2>
             <div className="space-y-4 text-slate-500 leading-relaxed">
               <p>Modern tools and AI workflows now allow high-quality execution — strategy, campaign management, web builds, tracking, and analytics — to be delivered by a lean, expert-led operation at a fraction of traditional agency overhead.</p>
               <p>That is not a shortcut. It is a more efficient model. Clients benefit from faster turnaround, tighter scope, less overhead, and direct access to the practitioner doing the work.</p>
@@ -56,15 +56,15 @@ export default function AboutPage() {
 
       {/* Principles */}
       <section className="bg-white py-20 lg:py-28 border-b border-slate-200" style={pad}>
-        <div className="mb-14">
+        <div className="mb-12">
           <p className="text-slate-400 font-medium text-sm tracking-wide uppercase mb-3">How We Work</p>
-          <h2 className="text-heading text-slate-800">The principles behind every engagement</h2>
+          <h2 className="text-heading text-slate-900">The principles behind every engagement</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {principles.map((p) => (
-            <div key={p.title} className="border border-gray-200 rounded-xl p-7">
+            <div key={p.title} className="border border-slate-200 rounded-xl p-7">
               <div className="w-8 h-0.5 bg-slate-900 mb-5 rounded-full" />
-              <h3 className="text-base font-semibold text-slate-800 mb-2">{p.title}</h3>
+              <h3 className="text-base font-semibold text-slate-900 mb-2">{p.title}</h3>
               <p className="text-sm text-slate-500 leading-relaxed">{p.description}</p>
             </div>
           ))}
@@ -74,11 +74,11 @@ export default function AboutPage() {
       {/* CTA */}
       <section className="bg-white py-20 lg:py-28" style={pad}>
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-heading text-slate-800 mb-5">Ready to work with a team that values clarity over complexity?</h2>
+          <h2 className="text-heading text-slate-900 mb-5">Ready to work with a team that values clarity over complexity?</h2>
           <p className="text-slate-500 leading-relaxed mb-10 max-w-xl mx-auto">
             Let&apos;s talk about your goals, your current setup, and where focused, senior-level work can make the biggest difference.
           </p>
-          <Link href="/contact" className="inline-flex items-center justify-center px-7 py-3.5 text-sm font-semibold text-white bg-slate-900 hover:bg-slate-700 rounded-lg transition-colors">
+          <Link href="/contact" className="inline-flex items-center justify-center w-full sm:w-auto px-7 py-3.5 text-sm font-semibold text-white bg-slate-900 hover:bg-slate-700 rounded-lg transition-colors">
             Book a Consultation
           </Link>
         </div>
